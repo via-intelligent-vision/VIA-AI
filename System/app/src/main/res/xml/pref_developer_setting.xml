@@ -1,0 +1,39 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:key="sourceMain">
+
+    <!--================================================================================-->
+    <PreferenceCategory
+        android:title="@string/prefTitle_Developer_ADASCategory" >
+
+        <SwitchPreference
+            android:key="@string/prefKey_Developer_ShowObjectBillboard"
+            android:title="@string/prefTitle_Developer_ShowObjectBillboard"
+            android:defaultValue="@bool/prefDefaultValue_Developer_ShowObjectBillboard"
+            android:summaryOn="@string/prefSummary_Developer_ShowObjectBillboard_On"
+            android:summaryOff="@string/prefSummary_Developer_ShowObjectBillboard_Off"
+            />
+
+        <SwitchPreference
+            android:key="@string/prefKey_Developer_CurveLaneDetection"
+            android:title="@string/prefTitle_Developer_CurveLaneDetection"
+            android:defaultValue="@bool/prefDefaultValue_Developer_CurveLaneDetection"
+            android:summaryOn="@string/prefSummary_Developer_CurveLaneDetection_On"
+            android:summaryOff="@string/prefSummary_Developer_CurveLaneDetection_Off"
+            android:enabled="false"
+            />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/prefTitle_Developer_SystemCategory">
+
+        <SwitchPreference
+            android:key="@string/prefKey_Developer_AutoLaunch"
+            android:title="@string/prefTitle_Developer_AutoLaunch"
+            android:defaultValue="@bool/prefDefaultValue_Developer_AutoLaunch"
+            android:summaryOn="@string/prefSummary_Developer_AutoLaunch_On"
+            android:summaryOff="@string/prefSummary_Developer_AutoLaunch_Off"
+            android:enabled="false"
+            />
+    </PreferenceCategory>
+</PreferenceScreen>

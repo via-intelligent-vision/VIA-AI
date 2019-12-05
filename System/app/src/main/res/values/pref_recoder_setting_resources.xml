@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="prefTitle_Recoder">Recoder settings</string>
+
+    <!--================================================================================-->
+    <color name="prefBkg_RecoderSetting">#FF111144</color>
+
+    <!--================================================================================-->
+    <string name="prefKey_Recoder_VideoRecordSettingCategory">prefKey_Recoder_VideoRecordSettingCategory</string>
+    <string name="prefTitle_Recoder_VideoRecordSettingCategory">Video Record Settings</string>
+
+    <!--================================================================================-->
+    <string name="prefKey_Recoder_VideoRecord">prefKey_Recoder_VideoRecord</string>
+    <string name="prefTitle_Recoder_VideoRecord">Record Status</string>
+    <bool name="prefDefaultValue_Recoder_VideoRecord">false</bool>
+
+    <!--================================================================================-->
+    <string name="prefKey_Recoder_VideoRecordPath">prefKey_Recoder_VideoRecordPath</string>
+    <string name="prefTitle_Recoder_VideoRecordPath">Record Path</string>
+    <string name="prefDefaultValue_Recoder_VideoRecordPath">Click to select a directory to restore file...</string>
+
+    <!--================================================================================-->
+    <string name="prefKey_Recoder_VideoRecordFPS">prefKey_Recoder_VideoRecordFPS</string>
+    <string name="prefTitle_Recoder_VideoRecordFPS">Record FPS</string>
+    <string-array name="prefEntries_Recoder_VideoRecordFPS">
+        <item>30 Fps</item>
+    </string-array>
+    <string-array name="prefValues_Recoder_VideoRecordFPS">
+        <item>30</item>
+    </string-array>
+    <string name="prefDefaultValue_Recoder_VideoRecordFPS">30</string>
+
+    <!--================================================================================-->
+    <string name="prefKey_Recoder_VideoRecordInterval">prefKey_Recoder_VideoRecordInterval</string>
+    <string name="prefTitle_Recoder_VideoRecordInterval">Record Interval</string>
+    <string-array name="prefEntries_Recoder_VideoRecordInterval">
+        <item>1 mins</item>
+        <item>3 mins</item>
+    </string-array>
+    <string-array name="prefValues_Recoder_VideoRecordInterval">
+        <item>1</item>
+        <item>3</item>
+    </string-array>
+    <string name="prefDefaultValue_Recoder_VideoRecordInterval">1</string>
+
+
+    <!--================================================================================-->
+    <string name="prefKey_Recoder_VideoRecordBitrate">prefKey_Recoder_VideoRecordBitrate</string>
+    <string name="prefTitle_Recoder_VideoRecordBitrate">Record Bitrate</string>
+    <string-array name="prefEntries_Recoder_VideoRecordBitrate">
+        <item>5 Mbit/s</item>
+        <item>4 Mbit/s</item>
+        <item>3 Mbit/s</item>
+        <item>2 Mbit/s</item>
+        <item>1 Mbit/s</item>
+    </string-array>
+    <string-array name="prefValues_Recoder_VideoRecordBitrate">
+        <item>5242880</item>
+        <item>4194304</item>
+        <item>3145728</item>
+        <item>2097152</item>
+        <item>1048576</item>
+    </string-array>
+    <string name="prefDefaultValue_Recoder_VideoRecordBitrate">4194304</string>
+
+
+    <!--================================================================================-->
+    <string name="prefKey_Recoder_VehicleBusRecordSettingCategory">prefKey_Recoder_VehicleBusRecordSettingCategory</string>
+    <string name="prefTitle_Recoder_VehicleBusRecordSettingCategory">Vehicle-Bus Data Record Settings</string>
+
+    <!--================================================================================-->
+    <string name="prefKey_Recoder_VehicleBusRecord">prefKey_Recoder_VehicleBusRecord</string>
+    <string name="prefTitle_Recoder_VehicleBusRecord">Record Status</string>
+    <bool name="prefDefaultValue_Recoder_VehicleBusRecord">false</bool>
+
+    <!--================================================================================-->
+    <string name="prefKey_Recoder_VehicleBusRecordPath">prefKey_Recoder_VehicleBusRecordPath</string>
+    <string name="prefTitle_Recoder_VehicleBusRecordPath">Record Path</string>
+    <string name="prefDefaultValue_Recoder_VehicleBusRecordPath">Click to select a directory to restore file...</string>
+
+</resources>

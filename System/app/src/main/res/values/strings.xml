@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">VIA-AI</string>
+    <string name="setting_name">VIA-AI Setting</string>
+    <string name="camcalib_name">VIA-AI Camera Calibration</string>
+
+    <string name="key_camera_mode">CameraMode</string>
+    <string name="key_camera_id">CameraIdentify</string>
+    <string name="key_file_path">FilePath</string>
+    <string name="key_file_name">FileName</string>
+    <string name="key_config_path">ConfigPath</string>
+    <string name="key_config_name">ConfigName</string>
+    <string name="key_frame_width">FrameWidth</string>
+    <string name="key_frame_height">FrameHeight</string>
+    <string name="key_camera_permutation">VideoCameraCount</string>
+
+
+</resources>

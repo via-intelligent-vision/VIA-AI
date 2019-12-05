@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <android.support.constraint.Guideline
+        android:id="@+id/v15p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.15" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/v55p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.55" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/v60p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.6" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/h20p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.20" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/h80p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.80" />
+
+    <ImageView
+        android:id="@+id/BatteryImg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="fitXY"
+        android:background="@null"
+        android:src="@drawable/icon_battery_100"
+        android:layout_gravity="center"
+        android:alpha="0.8"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@+id/v60p" />
+
+    <ImageView
+        android:id="@+id/ChargingImg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="fitXY"
+        android:background="@null"
+        android:src="@drawable/icon_battery_charging"
+        android:layout_gravity="center"
+        app:layout_constraintTop_toTopOf="@+id/h20p"
+        app:layout_constraintBottom_toBottomOf="@+id/h80p"
+        app:layout_constraintLeft_toLeftOf="@+id/v15p"
+        app:layout_constraintRight_toRightOf="@+id/v55p" />
+
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/BatteryPercentage"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="3dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:text="80%"
+        android:textColor="#AAFFFFFF"
+        android:maxLines="1"
+        app:autoSizeTextType="uniform"
+        app:autoSizeMinTextSize="1sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@+id/v60p"
+        app:layout_constraintRight_toRightOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,47 @@
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:key="sourceMain">
+
+    <com.viatech.via_ai.Preferences.TextPreference
+        android:key="@string/prefKey_SettingHeader_CameraSettings"
+        android:icon="@drawable/icon_camera"
+        android:title="Camera Settings"
+        android:defaultValue="@string/prefValue_SettingHeader_CameraSettings"
+        />
+
+    <com.viatech.via_ai.Preferences.TextPreference
+        android:key="@string/prefKey_SettingHeader_RecorderSettings"
+        android:icon="@drawable/icon_record_data"
+        android:title="Recorder Settings"
+        android:defaultValue="@string/prefValue_SettingHeader_RecorderSettings"
+        />
+
+    <com.viatech.via_ai.Preferences.TextPreference
+        android:key="@string/prefKey_SettingHeader_ADASSettings"
+        android:icon="@drawable/icon_vehicle_bus"
+        android:title="ADAS Settings"
+        android:defaultValue="@string/prefValue_SettingHeader_ADASSettings"
+        />
+
+    <com.viatech.via_ai.Preferences.TextPreference
+        android:key="@string/prefKey_SettingHeader_VehicleBus"
+        android:icon="@drawable/icon_vehicle_bus"
+        android:title="Vehicle Bus"
+        android:defaultValue="@string/prefValue_SettingHeader_VehicleBus"
+        />
+
+    <com.viatech.via_ai.Preferences.TextPreference
+        android:key="@string/prefKey_SettingHeader_User"
+        android:icon="@drawable/icon_account"
+        android:title="User"
+        android:defaultValue="@string/prefValue_SettingHeader_User"
+        />
+
+    <com.viatech.via_ai.Preferences.TextPreference
+        android:key="@string/prefKey_SettingHeader_System"
+        android:title="System"
+        android:icon="@drawable/icon_system"
+        android:defaultValue="@string/prefValue_SettingHeader_System"
+        />
+
+</PreferenceScreen>

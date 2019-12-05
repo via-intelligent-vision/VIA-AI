@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#002255"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+
+    <!-- *****************************************************************************************
+            Define the UI component
+           ***************************************************************************************  -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="10dp"
+        android:background="#BB666666"/>
+
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#003366">
+
+        <android.support.constraint.ConstraintLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <!-- *****************************************************************************************
+                     Define the GudeLines ....  These lines will decide the ratio of panel units
+                    ***************************************************************************************  -->
+            <!--Vertical-->
+            <android.support.constraint.Guideline
+                android:id="@+id/layoutMobile360HolisticView_guideline_vertical_10p"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.1" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/layoutMobile360HolisticView_guideline_vertical_15p"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.15" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/layoutMobile360HolisticView_guideline_vertical_20p"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.2" />
+
+            <!--Horizontal-->
+            <android.support.constraint.Guideline
+                android:id="@+id/layoutMobile360HolisticView_guideline_horizontal_2_8p"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.028" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/layoutMobile360HolisticView_guideline_horizontal_1_5p"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.02" />
+
+            <!--==========================================================================-->
+            <!--About TextSize Reference TextView -->
+            <!--Invisiable in runtime layout-->
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/layout_adas_preferences_TextSizeReference_Title"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:textStyle="bold"
+                android:gravity="right"
+                android:text="TextSizeReference________________________padding________________________Title"
+                android:maxLines="1"
+                app:autoSizeTextType="uniform"
+                app:autoSizeMinTextSize="6sp"
+                app:autoSizeMaxTextSize="20sp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="@+id/layoutMobile360HolisticView_guideline_horizontal_2_8p"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"/>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/layout_adas_preferences_TextSizeReference_Value"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:gravity="right"
+                android:text="TextSizeReference_____________________________padding_____________________________Value"
+                android:maxLines="1"
+                app:autoSizeTextType="uniform"
+                app:autoSizeMinTextSize="6sp"
+                app:autoSizeMaxTextSize="17sp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="@+id/layoutMobile360HolisticView_guideline_horizontal_1_5p"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"/>
+
+
+            <com.viatech.via_ai.Preferences.PreferenceView_CameraSource
+                android:id="@+id/layout_adas_preferences_CameraSourceView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/layout_adas_preferences_VehicleBusView"
+                />
+
+            <com.viatech.via_ai.Preferences.PreferenceView_VehicleBus
+                android:id="@+id/layout_adas_preferences_VehicleBusView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/layout_adas_preferences_CameraSourceView"
+                app:layout_constraintBottom_toBottomOf="@+id/layout_adas_preferences_Divider_0"
+                />
+
+            <View
+                android:id="@+id/layout_adas_preferences_Divider_0"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#FFFFFF"
+                app:layout_constraintTop_toBottomOf="@+id/layout_adas_preferences_VehicleBusView"/>
+
+            <!--==========================================================================-->
+            <!--About ADAS Configuration -->
+            <TextView
+                android:id="@+id/layout_adas_preferences_ConfigurationTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginStart="10dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:text="+ ADAS Configuration"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/layout_adas_preferences_Divider_0" />
+
+            <Button
+                android:id="@+id/layout_adas_preferences_ConfigurationPickButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:text="  ...  "
+                android:textSize="14sp"
+                app:layout_constraintLeft_toLeftOf="@+id/layout_adas_preferences_ConfigurationTitle"
+                app:layout_constraintTop_toBottomOf="@+id/layout_adas_preferences_ConfigurationTitle" />
+
+            <TextView
+                android:id="@+id/layout_adas_preferences_ConfigurationPathText"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="15dp"
+                android:gravity="center|left"
+                android:textSize="14sp"
+                android:text="Config stored in : /storage/usbdisk1/"
+                app:layout_constraintTop_toTopOf="@+id/layout_adas_preferences_ConfigurationPickButton"
+                app:layout_constraintBottom_toBottomOf="@+id/layout_adas_preferences_ConfigurationPickButton"
+                app:layout_constraintLeft_toRightOf="@+id/layout_adas_preferences_ConfigurationPickButton"
+                app:layout_constraintRight_toRightOf="parent"/>
+
+            <View
+                android:id="@+id/layout_adas_preferences_Divider_1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="10dp"
+                android:background="#FFFFFF"
+                app:layout_constraintTop_toBottomOf="@+id/layout_adas_preferences_ConfigurationPickButton"/>
+
+            <!--==========================================================================-->
+            <!--About Auto Launch -->
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/layout_adas_preferences_AutoLaunchTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginStart="10dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:text="+ Auto Launch"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/layout_adas_preferences_ModuleToggle_AutoLaunch"
+                app:layout_constraintBottom_toBottomOf="@+id/layout_adas_preferences_ModuleToggle_AutoLaunch"/>
+
+            <CheckBox
+                android:visibility="gone"
+                android:id="@+id/layout_adas_preferences_ModuleToggle_AutoLaunch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="@+id/layout_adas_preferences_Divider_1"
+                app:layout_constraintRight_toRightOf="@+id/layout_adas_preferences_Divider_1"/>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:visibility="gone"
+                android:id="@+id/layout_adas_preferences_AutoLaunchText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:gravity="center"
+                android:text="Enable camera auto launch."
+                app:autoSizeMaxTextSize="24sp"
+                app:layout_constraintTop_toBottomOf="@+id/layout_adas_preferences_ModuleToggle_AutoLaunch"
+                app:layout_constraintLeft_toLeftOf="@+id/layout_adas_preferences_AutoLaunchTitle"/>
+
+            <View
+                android:visibility="gone"
+                android:id="@+id/layout_adas_preferences_Divider_3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="10dp"
+                android:background="#FFFFFF"
+                app:layout_constraintTop_toBottomOf="@+id/layout_adas_preferences_AutoLaunchText"/>
+
+            <!--==========================================================================-->
+            <!--About ADAS Module Settings -->
+            <TextView
+                android:id="@+id/layout_adas_preferences_AdasModulesTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:text="+ ADAS Module"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/layout_adas_preferences_Divider_3"/>
+
+            <View
+                android:id="@+id/layout_adas_preferences_Divider_5_1"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_margin="10dp"
+                android:background="#888888"
+                app:layout_constraintLeft_toLeftOf="@+id/layoutMobile360HolisticView_guideline_vertical_10p"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/layout_adas_preferences_AdasModulesTitle"/>
+
+            <!--==========================================================================-->
+            <!--About LDWS Module Settings -->
+            <CheckBox
+                android:id="@+id/layout_adas_preferences_ModuleToggle_LDWS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/layout_adas_preferences_Divider_5_1"
+                app:layout_constraintRight_toRightOf="parent"/>
+
+            <TextView
+                android:id="@+id/layout_adas_preferences_ModuleTitle_LDWS"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginStart="10dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:text="+ [ LDW ] Lane Departure Warning"
+                app:layout_constraintLeft_toLeftOf="@+id/layoutMobile360HolisticView_guideline_vertical_10p"
+                app:layout_constraintTop_toTopOf="@+id/layout_adas_preferences_ModuleToggle_LDWS"
+                app:layout_constraintBottom_toBottomOf="@+id/layout_adas_preferences_ModuleToggle_LDWS"/>
+
+            <CheckBox
+                android:visibility="gone"
+                android:id="@+id/layout_adas_preferences_ModuleToggle_WarningAudio_LDWS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enable Warning Audio"
+                android:enabled="false"
+                app:layout_constraintLeft_toLeftOf="@+id/layoutMobile360HolisticView_guideline_vertical_15p"
+                app:layout_constraintTop_toBottomOf="@+id/layout_adas_preferences_ModuleTitle_LDWS" />
+
+            <TextView
+                android:id="@+id/layout_adas_preferences_ModuleParameterTitle_LDWS_EnableSpeed"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginStart="10dp"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:text=" # Enable Speed (Km/h)"
+                app:layout_constraintLeft_toLeftOf="@+id/layoutMobile360HolisticView_guideline_vertical_15p"
+                app:layout_constraintTop_toTopOf="@+id/layout_adas_preferences_ModuleParameter_LDWS_EnableSpeedSpinner"
+                app:layout_constraintBottom_toBottomOf="@+id/layout_adas_preferences_ModuleParameter_LDWS_EnableSpeedSpinner" />
+
+            <Spinner
+                android:id="@+id/layout_adas_preferences_ModuleParameter_LDWS_EnableSpeedSpinner"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                app:layout_constraintLeft_toRightOf="@+id/layout_adas_preferences_ModuleParameterTitle_LDWS_EnableSpeed"
+                app:layout_constraintTop_toBottomOf="@+id/layout_adas_preferences_ModuleToggle_WarningAudio_LDWS"/>
+
+            <View
+                android:id="@+id/layout_adas_preferences_Divider_3_1"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_margin="10dp"
+                android:background="#888888"
+                app:layout_constraintLeft_toLeftOf="@+id/layout_adas_preferences_ModuleTitle_LDWS"
+                app:layout_constraintRight_toRightOf="@+id/layout_adas_preferences_ModuleToggle_LDWS"
+                app:layout_constraintTop_toBottomOf="@+id/layout_adas_preferences_ModuleParameter_LDWS_EnableSpeedSpinner"/>
+
+            <!--==========================================================================-->
+            <!--About FCWS Module Settings -->
+            <CheckBox
+                android:id="@+id/layout_adas_preferences_ModuleToggle_FCWS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/layout_adas_preferences_Divider_3_1"
+                app:layout_constraintRight_toRightOf="parent"/>
+
+            <TextView
+                android:id="@+id/layout_adas_preferences_ModuleTitle_FCWS"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginStart="10dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:text="+ [ FCW ] Forward Collision Warning"
+                app:layout_constraintLeft_toLeftOf="@+id/layoutMobile360HolisticView_guideline_vertical_10p"
+                app:layout_constraintTop_toTopOf="@+id/layout_adas_preferences_ModuleToggle_FCWS"
+                app:layout_constraintBottom_toBottomOf="@+id/layout_adas_preferences_ModuleToggle_FCWS"/>
+
+            <CheckBox
+                android:visibility="gone"
+                android:id="@+id/layout_adas_preferences_ModuleToggle_WarningAudio_FCWS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enable Warning Audio"
+                android:enabled="false"
+                app:layout_constraintLeft_toLeftOf="@+id/layoutMobile360HolisticView_guideline_vertical_15p"
+                app:layout_constraintTop_toBottomOf="@+id/layout_adas_preferences_ModuleTitle_FCWS" />
+
+            <View
+                android:id="@+id/layout_adas_preferences_Divider_3_2"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_margin="10dp"
+                android:background="#888888"
+                app:layout_constraintLeft_toLeftOf="@+id/layout_adas_preferences_ModuleTitle_FCWS"
+                app:layout_constraintRight_toRightOf="@+id/layout_adas_preferences_ModuleToggle_FCWS"
+                app:layout_constraintTop_toBottomOf="@+id/layout_adas_preferences_ModuleToggle_WarningAudio_FCWS"/>
+
+            <!--==========================================================================-->
+            <!--About BSD_L Module Settings -->
+            <CheckBox
+                android:id="@+id/layout_adas_preferences_ModuleToggle_BSD_L"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/layout_adas_preferences_Divider_3_2"
+                app:layout_constraintRight_toRightOf="parent"/>
+
+            <TextView
+                android:id="@+id/layout_adas_preferences_ModuleTitle_BSD_L"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginStart="10dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:text="+ [ BSD_L ] Right Blind Spot Detection"
+                app:layout_constraintLeft_toLeftOf="@+id/layoutMobile360HolisticView_guideline_vertical_10p"
+                app:layout_constraintTop_toTopOf="@+id/layout_adas_preferences_ModuleToggle_BSD_L"
+                app:layout_constraintBottom_toBottomOf="@+id/layout_adas_preferences_ModuleToggle_BSD_L"/>
+
+            <CheckBox
+                android:visibility="gone"
+                android:id="@+id/layout_adas_preferences_ModuleToggle_WarningAudio_BSD_L"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enable Warning Audio"
+                android:enabled="false"
+                app:layout_constraintLeft_toLeftOf="@+id/layoutMobile360HolisticView_guideline_vertical_15p"
+                app:layout_constraintTop_toBottomOf="@+id/layout_adas_preferences_ModuleTitle_BSD_L" />
+
+            <View
+                android:id="@+id/layout_adas_preferences_Divider_3_3"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_margin="10dp"
+                android:background="#888888"
+                app:layout_constraintLeft_toLeftOf="@+id/layout_adas_preferences_ModuleTitle_BSD_L"
+                app:layout_constraintRight_toRightOf="@+id/layout_adas_preferences_ModuleToggle_BSD_L"
+                app:layout_constraintTop_toBottomOf="@+id/layout_adas_preferences_ModuleToggle_WarningAudio_BSD_L"/>
+
+
+            <!--==========================================================================-->
+            <!--About BSD_R Module Settings -->
+            <CheckBox
+                android:id="@+id/layout_adas_preferences_ModuleToggle_BSD_R"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/layout_adas_preferences_Divider_3_3"
+                app:layout_constraintRight_toRightOf="parent"/>
+
+            <TextView
+                android:id="@+id/layout_adas_preferences_ModuleTitle_BSD_R"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginStart="10dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:text="+ [ BSD_R ] Left Blind Spot Detection"
+                app:layout_constraintLeft_toLeftOf="@+id/layoutMobile360HolisticView_guideline_vertical_10p"
+                app:layout_constraintTop_toTopOf="@+id/layout_adas_preferences_ModuleToggle_BSD_R"
+                app:layout_constraintBottom_toBottomOf="@+id/layout_adas_preferences_ModuleToggle_BSD_R"/>
+
+            <CheckBox
+                android:visibility="gone"
+                android:id="@+id/layout_adas_preferences_ModuleToggle_WarningAudio_BSD_R"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enable Warning Audio"
+                android:enabled="false"
+                app:layout_constraintLeft_toLeftOf="@+id/layoutMobile360HolisticView_guideline_vertical_15p"
+                app:layout_constraintTop_toBottomOf="@+id/layout_adas_preferences_ModuleTitle_BSD_R" />
+
+            <View
+                android:id="@+id/layout_adas_preferences_Divider_3_4"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_margin="10dp"
+                android:background="#888888"
+                app:layout_constraintLeft_toLeftOf="@+id/layout_adas_preferences_ModuleTitle_BSD_R"
+                app:layout_constraintRight_toRightOf="@+id/layout_adas_preferences_ModuleToggle_BSD_R"
+                app:layout_constraintTop_toBottomOf="@+id/layout_adas_preferences_ModuleToggle_WarningAudio_BSD_R"/>
+
+            <!--==========================================================================-->
+            <!--About SLD Module Settings -->
+            <CheckBox
+                android:id="@+id/layout_adas_preferences_ModuleToggle_SLD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/layout_adas_preferences_Divider_3_4"
+                app:layout_constraintRight_toRightOf="parent"/>
+
+            <TextView
+                android:id="@+id/layout_adas_preferences_ModuleTitle_SLD"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginStart="10dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:text="+ [ SLD ] Speed Limit Detection"
+                app:layout_constraintLeft_toLeftOf="@+id/layoutMobile360HolisticView_guideline_vertical_10p"
+                app:layout_constraintTop_toTopOf="@+id/layout_adas_preferences_ModuleToggle_SLD"
+                app:layout_constraintBottom_toBottomOf="@+id/layout_adas_preferences_ModuleToggle_SLD"/>
+
+            <CheckBox
+                android:visibility="gone"
+                android:id="@+id/layout_adas_preferences_ModuleToggle_WarningAudio_SLD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enable Warning Audio"
+                android:enabled="false"
+                app:layout_constraintLeft_toLeftOf="@+id/layoutMobile360HolisticView_guideline_vertical_15p"
+                app:layout_constraintTop_toBottomOf="@+id/layout_adas_preferences_ModuleTitle_SLD" />
+
+            <View
+                android:id="@+id/layout_adas_preferences_Divider_3_5"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_margin="10dp"
+                android:background="#888888"
+                app:layout_constraintLeft_toLeftOf="@+id/layout_adas_preferences_ModuleTitle_SLD"
+                app:layout_constraintRight_toRightOf="@+id/layout_adas_preferences_ModuleToggle_SLD"
+                app:layout_constraintTop_toBottomOf="@+id/layout_adas_preferences_ModuleToggle_WarningAudio_SLD"/>
+
+
+            <!--==========================================================================-->
+            <!--About PAS Module Settings -->
+            <CheckBox
+                android:visibility="gone"
+                android:id="@+id/layout_adas_preferences_ModuleToggle_PAS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/layout_adas_preferences_Divider_3_5"
+                app:layout_constraintRight_toRightOf="parent"/>
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/layout_adas_preferences_ModuleTitle_PAS"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginStart="10dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:text="+ [ PAS ] Paring Assist System"
+                app:layout_constraintLeft_toLeftOf="@+id/layoutMobile360HolisticView_guideline_vertical_10p"
+                app:layout_constraintTop_toTopOf="@+id/layout_adas_preferences_ModuleToggle_PAS"
+                app:layout_constraintBottom_toBottomOf="@+id/layout_adas_preferences_ModuleToggle_PAS"/>
+
+            <View
+                android:visibility="gone"
+                android:id="@+id/layout_adas_preferences_Divider_3_6"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_margin="10dp"
+                android:background="#888888"
+                app:layout_constraintLeft_toLeftOf="@+id/layout_adas_preferences_ModuleTitle_PAS"
+                app:layout_constraintRight_toRightOf="@+id/layout_adas_preferences_ModuleToggle_PAS"
+                app:layout_constraintTop_toBottomOf="@+id/layout_adas_preferences_ModuleToggle_PAS"/>
+
+
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+</LinearLayout>

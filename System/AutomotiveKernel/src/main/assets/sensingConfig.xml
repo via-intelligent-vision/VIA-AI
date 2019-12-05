@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?><opencv_storage>
+    <LDWS AESEncrypt="false">
+        <IdentifyComment>"DefaultConfig"</IdentifyComment>
+        <Data>
+            <VehicleWidthMeter>1.7</VehicleWidthMeter>
+            <DepartureWarningMeter>0.05</DepartureWarningMeter>
+        </Data>
+        <InputImage>
+            <Width>1280</Width>
+            <Height>720</Height>
+        </InputImage>
+        <Extrinsic>
+            <PatternGeometry>
+                <Width>183.0</Width>
+                <Height>122.0</Height>
+                <VehiclePoleInCamera>0.5 1.0</VehiclePoleInCamera>
+                <DistanceFromVehicle>330</DistanceFromVehicle>
+            </PatternGeometry>
+            <ImageAnchor>
+                <p0>0.3612635 0.7675657</p0>
+                <p1>0.69819625 0.78908485</p1>
+                <p2>0.73705685 0.90064085</p2>
+                <p3>0.33054316 0.8813414</p3>
+            </ImageAnchor>
+            <FloorGeometry>
+                <Width>128</Width>
+                <Height>52</Height>
+                <WidthScale>0.12</WidthScale>
+                <HeightScale>0.03</HeightScale>
+            </FloorGeometry>
+        </Extrinsic>
+        <Modules>
+            <BottsDots>0</BottsDots>
+        </Modules>
+    </LDWS>
+    
+     <FCWS AESEncrypt="false">
+        <IdentifyComment>"DefaultConfig"</IdentifyComment>
+        <CascadeFileName>"pos_3268_neg_6486_Haar_w20h20.xml"</CascadeFileName>
+        <Data>
+            <VehicleWidthMeter>1.7</VehicleWidthMeter>
+            <DepartureWarningMeter>0.05</DepartureWarningMeter>
+        </Data>
+        <InputImage>
+            <Width>1280</Width>
+            <Height>720</Height>
+        </InputImage>
+        <Extrinsic>
+            <PatternGeometry>
+                <Width>183.0</Width>
+                <Height>122.0</Height>
+                <VehiclePoleInCamera>0.5 1.0</VehiclePoleInCamera>
+                <DistanceFromVehicle>330</DistanceFromVehicle>
+            </PatternGeometry>
+            <ImageAnchor>
+                <p0>0.3612635 0.7675657</p0>
+                <p1>0.6919625 0.78908485</p1>
+                <p2>0.73705685 0.90064085</p2>
+                <p3>0.33054316 0.8813414</p3>
+            </ImageAnchor>
+            <FloorGeometry>
+                <Width>128</Width>
+                <Height>52</Height>
+                <WidthScale>0.12</WidthScale>
+                <HeightScale>0.03</HeightScale>
+            </FloorGeometry>
+        </Extrinsic>
+    </FCWS>
+    
+    <BSD AESEncrypt="false">
+        <IdentifyComment>"DefaultConfig"</IdentifyComment>
+        <Data_L>
+            <DETECT_BORDER_LEFT_L>0.22000019</DETECT_BORDER_LEFT_L>
+            <DETECT_BORDER_RIGHT_L>0.5300002</DETECT_BORDER_RIGHT_L>
+            <OBJ_TOUCH_LINE_Y_L>0.26000023</OBJ_TOUCH_LINE_Y_L>
+        </Data_L>
+        <Data_R>
+            <DETECT_BORDER_LEFT_R>0.4799999</DETECT_BORDER_LEFT_R>
+            <DETECT_BORDER_RIGHT_R>0.7399999</DETECT_BORDER_RIGHT_R>
+            <OBJ_TOUCH_LINE_Y_R>0.26000023</OBJ_TOUCH_LINE_Y_R>
+        </Data_R>
+    </BSD>
+</opencv_storage>

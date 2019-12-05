@@ -1,0 +1,75 @@
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:key="sourceMain">
+
+    <PreferenceCategory
+        android:key="@string/prefKey_Recoder_VideoRecordSettingCategory"
+        android:title="@string/prefTitle_Recoder_VideoRecordSettingCategory">
+
+        <SwitchPreference
+            android:key="@string/prefKey_Recoder_VideoRecord"
+            android:title="@string/prefTitle_Recoder_VideoRecord"
+            android:defaultValue="@bool/prefDefaultValue_Recoder_VideoRecord"
+            android:summaryOff="Disable"
+            android:summaryOn="Enable"
+            />
+
+        <com.viatech.via_ai.Preferences.FileDialogPreference
+            android:key="@string/prefKey_Recoder_VideoRecordPath"
+            android:title="@string/prefTitle_Recoder_VideoRecordPath"
+            android:defaultValue="@string/prefDefaultValue_Recoder_VideoRecordPath"
+            />
+
+        <ListPreference
+            android:key="@string/prefKey_Recoder_VideoRecordFPS"
+            android:title="@string/prefTitle_Recoder_VideoRecordFPS"
+            android:entries="@array/prefEntries_Recoder_VideoRecordFPS"
+            android:entryValues="@array/prefValues_Recoder_VideoRecordFPS"
+            android:defaultValue="@string/prefDefaultValue_Recoder_VideoRecordFPS"
+            android:summary="    %s"
+            android:negativeButtonText="@null"
+            android:positiveButtonText="@null"
+            />
+
+        <ListPreference
+            android:key="@string/prefKey_Recoder_VideoRecordInterval"
+            android:title="@string/prefTitle_Recoder_VideoRecordInterval"
+            android:entries="@array/prefEntries_Recoder_VideoRecordInterval"
+            android:entryValues="@array/prefValues_Recoder_VideoRecordInterval"
+            android:defaultValue="@string/prefDefaultValue_Recoder_VideoRecordInterval"
+            android:summary="    %s"
+            android:negativeButtonText="@null"
+            android:positiveButtonText="@null"
+            />
+
+        <ListPreference
+            android:key="@string/prefKey_Recoder_VideoRecordBitrate"
+            android:title="@string/prefTitle_Recoder_VideoRecordBitrate"
+            android:entries="@array/prefEntries_Recoder_VideoRecordBitrate"
+            android:entryValues="@array/prefValues_Recoder_VideoRecordBitrate"
+            android:defaultValue="@string/prefDefaultValue_Recoder_VideoRecordBitrate"
+            android:summary="    %s"
+            android:negativeButtonText="@null"
+            android:positiveButtonText="@null"
+            />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="@string/prefKey_Recoder_VehicleBusRecordSettingCategory"
+        android:title="@string/prefTitle_Recoder_VehicleBusRecordSettingCategory" >
+
+        <SwitchPreference
+            android:key="@string/prefKey_Recoder_VehicleBusRecord"
+            android:title="@string/prefTitle_Recoder_VehicleBusRecord"
+            android:defaultValue="@bool/prefDefaultValue_Recoder_VehicleBusRecord"
+            android:summaryOff="Disable , depend on [Vehicle Bus Status : Enable ,  Video Record : Enable]"
+            android:summaryOn="Enable"
+            />
+
+        <com.viatech.via_ai.Preferences.FileDialogPreference
+            android:key="@string/prefKey_Recoder_VehicleBusRecordPath"
+            android:title="@string/prefTitle_Recoder_VehicleBusRecordPath"
+            android:defaultValue="@string/prefDefaultValue_Recoder_VehicleBusRecordPath"
+            />
+    </PreferenceCategory>
+</PreferenceScreen>

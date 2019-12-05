@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="prefTitle_ADAS">ADAS settings</string>
+
+    <!--================================================================================-->
+    <color name="prefBkg_ADAS_RegularSetting">#FF111144</color>
+
+    <!--[Regular Setting]===================================================================-->
+    <string name="prefKey_ADAS_RegularSettingCategory">prefKey_ADAS_RegularSettingCategory</string>
+    <string name="prefTitle_ADAS_RegularSettingCategory">Regular Settings</string>
+
+    <!--=[Configuration]=======================================================================-->
+    <string name="prefKey_ADAS_ConfigurationPath">prefKey_ADAS_ConfigurationPath</string>
+    <string name="prefTitle_ADAS_ConfigurationPathTitle">Sensing Configuration Path</string>
+    <string name="prefDefaultValue_ADAS_ConfigurationPathDefaultValue">Click to select a \".xml\" file...</string>
+
+    <!--=[Configuration]=======================================================================-->
+    <string name="prefKey_ADAS_AutomotiveConfigurationPath">prefKey_ADAS_AutomotiveConfigurationPath</string>
+    <string name="prefTitle_ADAS_AutomotiveConfigurationPathTitle">Automotive Configuration Path</string>
+    <string name="prefDefaultValue_ADAS_AutomotiveConfigurationPathDefaultValue">Click to select a \".xml\" file...</string>
+
+    <!--[Audio Setting]===================================================================-->
+    <string name="prefKey_ADAS_AudioSettingCategory">prefKey_ADAS_AudioSettingCategory</string>
+    <string name="prefTitle_ADAS_AudioSettingCategory">Audio Settings</string>
+
+    <!--=[TTS]=======================================================================-->
+    <string name="prefKey_ADAS_TTS_Status">prefKey_ADAS_TTS_Status</string>
+    <string name="prefTtitle_ADAS_TTS_Status">Text-To-Speech (Google)</string>
+    <bool name="prefDefaultValue_ADAS_TTS_Status">false</bool>
+    <string name="prefSummaryOn_ADAS_TTS_Status">Enable</string>
+    <string name="prefSummaryOff_ADAS_TTS_Status">Disable</string>
+
+    <!--=[Beep]=======================================================================-->
+    <string name="prefKey_ADAS_Beep_Status">prefKey_ADAS_Beep_Status</string>
+    <string name="prefTtitle_ADAS_Beep_Status">Beep Alarm</string>
+    <bool name="prefDefaultValue_ADAS_Beep_Status">false</bool>
+    <string name="prefSummaryOn_ADAS_Beep_Status">Enable</string>
+    <string name="prefSummaryOff_ADAS_Beep_Status">Disable</string>
+
+    <!--=[ LDW ]==============================================================================-->
+    <string name="prefKey_ADAS_LDW_DetectorCategory">prefKey_ADAS_LDWS_DetectorCategory</string>
+    <string name="prefTitle_ADAS_LDW_DetectorCategory">[ LDW ] Lane Departure Warning</string>
+
+    <string name="prefKey_ADAS_LDW_DetectorStatus">prefKey_ADAS_LDWS_DetectorStatus</string>
+    <string name="prefTtitle_ADAS_LDW_DetectorStatus">Detector status</string>
+    <bool name="prefDefaultValue_ADAS_LDW_DetectorStatus">true</bool>
+
+    <string name="prefKey_ADAS_LDW_WarningAudio">prefKey_ADAS_LDW_WarningAudio</string>
+    <string name="prefTtitle_ADAS_LDW_WarningAudio">Warning Audio</string>
+    <bool name="prefDefaultValue_ADAS_LDW_WarningAudio">false</bool>
+
+    <string name="prefKey_ADAS_LDW_DetectorEnableSpeed">prefKey_ADAS_LDWS_DetectorEnableSpeed</string>
+    <string name="prefTtitle_ADAS_LDW_DetectorEnableSpeed">Enable Speed</string>
+    <string-array name="prefEntries_ADAS_LDW_DetectorEnableSpeed">
+        <item>Always Enable</item>
+        <item>30 Km/h</item>
+        <item>40 Km/h</item>
+        <item>50 Km/h</item>
+        <item>60 Km/h</item>
+        <item>70 Km/h</item>
+    </string-array>
+    <string-array name="prefValue_ADAS_LDW_DetectorEnableSpeed">
+        <item>-1</item>
+        <item>30</item>
+        <item>40</item>
+        <item>50</item>
+        <item>60</item>
+        <item>70</item>
+    </string-array>
+    <string name="prefDefaultValue_ADAS_LDW_DetectorEnableSpeed">-1</string>
+
+    <!--=[ FCW ]==============================================================================-->
+    <string name="prefKey_ADAS_FCW_DetectorCategory">prefKey_ADAS_FCW_DetectorCategory</string>
+    <string name="prefTitle_ADAS_FCW_DetectorCategory">[ FCW ] Forward Collision Warning</string>
+
+    <string name="prefKey_ADAS_FCW_DetectorStatus">prefKey_ADAS_FCW_DetectorStatus</string>
+    <string name="prefTtitle_ADAS_FCW_DetectorStatus">Detector Status</string>
+    <bool name="prefDefaultValue_ADAS_FCW_DetectorStatus">false</bool>
+
+    <string name="prefKey_ADAS_FCW_DetectorMode">prefKey_ADAS_FCW_DetectorMode</string>
+    <string name="prefTtitle_ADAS_FCW_DetectorMode">Detector Mode</string>
+    <bool name="prefDefaultValue_ADAS_FCW_DetectorMode">true</bool>
+    <string name="prefSummaryOn_ADAS_FCW_DetectorMode">Deep Learning (Device must support Qualcomm SNPE)</string>
+    <string name="prefSummaryOff_ADAS_FCW_DetectorMode">Computer Vision</string>
+
+    <string name="prefKey_ADAS_FCW_WarningAudio">prefKey_ADAS_FCW_WarningAudio</string>
+    <string name="prefTtitle_ADAS_FCW_WarningAudio">Warning Audio</string>
+    <bool name="prefDefaultValue_ADAS_FCW_WarningAudio">false</bool>
+
+    <!--=[ SLD ]==============================================================================-->
+    <string name="prefKey_ADAS_SLD_DetectorCategory">prefKey_ADAS_SLD_DetectorCategory</string>
+    <string name="prefTitle_ADAS_SLD_DetectorCategory">[ SLD ] Speed Limit Detection</string>
+
+    <string name="prefKey_ADAS_SLD_DetectorStatus">prefKey_ADAS_SLD_DetectorStatus</string>
+    <string name="prefTtitle_ADAS_SLD_DetectorStatus">Detector status</string>
+    <bool name="prefDefaultValue_ADAS_SLD_DetectorStatus">false</bool>
+
+    <string name="prefKey_ADAS_SLD_WarningAudio">prefKey_ADAS_SLD_WarningAudio</string>
+    <string name="prefTtitle_ADAS_SLD_WarningAudio">Warning Audio</string>
+    <bool name="prefDefaultValue_ADAS_SLD_WarningAudio">false</bool>
+
+    <!--=[ BSD ]==============================================================================-->
+    <string name="prefKey_ADAS_BSD_DetectorCategory">prefKey_ADAS_BSD_DetectorCategory</string>
+    <string name="prefTitle_ADAS_BSD_DetectorCategory">[ BSD ] Blind Spot Detection</string>
+
+    <string name="prefKey_ADAS_BSD_L_DetectorStatus">prefKey_ADAS_BSD_L_DetectorStatus</string>
+    <string name="prefTtitle_ADAS_BSD_L_DetectorStatus">[ Left Side ] Detector status</string>
+    <bool name="prefDefaultValue_ADAS_BSD_L_DetectorStatus">false</bool>
+
+    <string name="prefKey_ADAS_BSD_R_DetectorStatus">prefKey_ADAS_BSD_R_DetectorStatus</string>
+    <string name="prefTtitle_ADAS_BSD_R_DetectorStatus">[ Right Side ] Detector status</string>
+    <bool name="prefDefaultValue_ADAS_BSD_R_DetectorStatus">false</bool>
+
+    <string name="prefKey_ADAS_BSD_WarningAudio">prefKey_ADAS_BSD_WarningAudio</string>
+    <string name="prefTtitle_ADAS_BSD_WarningAudio">Warning Audio</string>
+    <bool name="prefDefaultValue_ADAS_BSD_WarningAudio">false</bool>
+
+
+    <!--=[ TLD ]==============================================================================-->
+    <string name="prefKey_ADAS_TLD_DetectorCategory">prefKey_ADAS_TLD_DetectorCategory</string>
+    <string name="prefTitle_ADAS_TLD_DetectorCategory">[ TLD ] Traffic Light Detection</string>
+
+    <string name="prefKey_ADAS_TLD_DetectorStatus">prefKey_ADAS_TLD_DetectorStatus</string>
+    <string name="prefTtitle_ADAS_TLD_DetectorStatus">Detector status</string>
+    <bool name="prefDefaultValue_ADAS_TLD_DetectorStatus">false</bool>
+
+    <string name="prefKey_ADAS_TLD_WarningAudio">prefKey_ADAS_TLD_WarningAudio</string>
+    <string name="prefTtitle_ADAS_TLD_WarningAudio">Warning Audio</string>
+    <bool name="prefDefaultValue_ADAS_TLD_WarningAudio">false</bool>
+</resources>

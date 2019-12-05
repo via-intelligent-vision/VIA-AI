@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--================================================================================-->
+    <string name="prefKey_CameraResource_PreferenceScreen">prefKey_CameraResource_PreferenceScreen</string>
+
+    <!--================================================================================-->
+    <string name="prefTitle_CameraSource">Camera source settings</string>
+
+    <!--================================================================================-->
+    <color name="prefBkg_CameraResource">#FF111144</color>
+
+    <!--================================================================================-->
+    <string name="prefKey_CameraResource_FrameCategory_0">prefKey_CameraResource_FrameCategory_0</string>
+    <string name="prefKey_CameraResource_FrameCategory_1">prefKey_CameraResource_FrameCategory_1</string>
+    <string name="prefKey_CameraResource_FrameCategory_2">prefKey_CameraResource_FrameCategory_2</string>
+    <string name="prefKey_CameraResource_FrameCategory_3">prefKey_CameraResource_FrameCategory_3</string>
+
+    <!--================================================================================-->
+    <string name="prefKey_CameraResource_ADAS_FrameSource">pref_CameraResource_ADAS_FrameSource</string>
+    <bool name="prefDefaultValue_CameraResource_ADAS_FrameSource">false</bool>
+    <string name="prefSummaryOn_CameraResource_ADAS_FrameSource">Video Playback</string>
+    <string name="prefSummaryOff_CameraResource_ADAS_FrameSource">Camera</string>
+
+    <!--================================================================================-->
+    <string name="prefKey_CameraResource_ADAS_PlaybackPath">prefKey_CameraResource_ADAS_PlaybackPath</string>
+    <string name="prefDefaultValue_CameraResource_ADAS_PlaybackPath">/sdcard/VIA_ADAS/video.mp4</string>
+
+    <!--================================================================================-->
+    <string name="prefKey_CameraResource_ADAS_CameraSourceWidth">prefKey_CameraResource_ADAS_CameraSourceWidth</string>
+    <string name="prefTitle_CameraResource_ADAS_CameraSourceWidth">Camera Source Width</string>
+    <string name="prefDefaultValue_CameraResource_ADAS_CameraSourceWidth">1280</string>
+
+    <string name="prefKey_CameraResource_ADAS_CameraSourceHeight">prefKey_CameraResource_ADAS_CameraSourceHeight</string>
+    <string name="prefTitle_CameraResource_ADAS_CameraSourceHeight">Camera Source Height</string>
+    <string name="prefDefaultValue_CameraResource_ADAS_CameraSourceHeight">720</string>
+
+    <!--================================================================================-->
+    <string name="prefKey_CameraResource_ADAS_FrameWidth_0">prefKey_CameraResource_ADAS_FrameWidth_0</string>
+    <string name="prefKey_CameraResource_ADAS_FrameWidth_1">prefKey_CameraResource_ADAS_FrameWidth_1</string>
+    <string name="prefKey_CameraResource_ADAS_FrameWidth_2">prefKey_CameraResource_ADAS_FrameWidth_2</string>
+    <string name="prefKey_CameraResource_ADAS_FrameWidth_3">prefKey_CameraResource_ADAS_FrameWidth_3</string>
+    <string name="prefTitle_CameraResource_ADAS_FrameWidth">Frame Width</string>
+    <string name="prefDefaultValue_CameraResource_ADAS_FrameWidth_0">1280</string>
+    <string name="prefDefaultValue_CameraResource_ADAS_FrameWidth_1">1280</string>
+    <string name="prefDefaultValue_CameraResource_ADAS_FrameWidth_2">1280</string>
+    <string name="prefDefaultValue_CameraResource_ADAS_FrameWidth_3">1280</string>
+
+    <string name="prefKey_CameraResource_ADAS_FrameHeight_0">prefKey_CameraResource_ADAS_FrameHeight_0</string>
+    <string name="prefKey_CameraResource_ADAS_FrameHeight_1">prefKey_CameraResource_ADAS_FrameHeight_1</string>
+    <string name="prefKey_CameraResource_ADAS_FrameHeight_2">prefKey_CameraResource_ADAS_FrameHeight_2</string>
+    <string name="prefKey_CameraResource_ADAS_FrameHeight_3">prefKey_CameraResource_ADAS_FrameHeight_3</string>
+    <string name="prefTitle_CameraResource_ADAS_FrameHeight">Frame Height</string>
+    <string name="prefDefaultValue_CameraResource_ADAS_FrameHeight_0">720</string>
+    <string name="prefDefaultValue_CameraResource_ADAS_FrameHeight_1">720</string>
+    <string name="prefDefaultValue_CameraResource_ADAS_FrameHeight_2">720</string>
+    <string name="prefDefaultValue_CameraResource_ADAS_FrameHeight_3">720</string>
+
+    <!--================================================================================-->
+    <string name="prefKey_CameraResource_ADAS_CameraDevices">prefKey_CameraResource_ADAS_CameraDevices</string>
+    <string name="prefTitle_CameraResource_ADAS_CameraDevices">Camera Device Identify</string>
+    <string-array name="pref_CameraResource_ADAS_CameraDevicesEntries">
+        <item>Device Identify 0 / CSI A</item>
+        <item>Device Identify 1 / CSI B</item>
+        <item>Device Identify 2 / CSI C</item>
+    </string-array>
+    <string-array name="pref_CameraResource_ADAS_CameraDevicesEntryValues">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string name="prefDefaultValue_CameraResource_ADAS_CameraDevicesEntry">0</string>
+
+    <!--================================================================================-->
+    <string name="prefKey_CameraResource_ADAS_CameraPermutation">prefKey_CameraResource_ADAS_CameraPermutation</string>
+    <string name="pref_CameraResource_ADAS_CameraPermutationTitle">Camera Count</string>
+    <string-array name="pref_CameraResource_ADAS_CameraPermutationEntries">
+        <item>Camera 1 in Frame (1x1)</item>
+    </string-array>
+    <string-array name="pref_CameraResource_ADAS_CameraPermutationEntryValues">
+        <item>1</item>
+    </string-array>
+    <string name="prefDefaultValue_CameraResource_ADAS_CameraPermutationEntry">1</string>
+
+    <!--================================================================================-->
+    <string name="prefKey_CameraResource_ADAS_CameraModule_0">prefKey_CameraResource_ADAS_CameraModule_0</string>
+    <string name="prefKey_CameraResource_ADAS_CameraModule_1">prefKey_CameraResource_ADAS_CameraModule_1</string>
+    <string name="prefKey_CameraResource_ADAS_CameraModule_2">prefKey_CameraResource_ADAS_CameraModule_2</string>
+    <string name="prefKey_CameraResource_ADAS_CameraModule_3">prefKey_CameraResource_ADAS_CameraModule_3</string>
+
+    <string name="pref_CameraResource_ADAS_CameraModuleTitle">Camera Module</string>
+    <string-array name="pref_CameraResource_ADAS_CameraModuleEntries">
+        <item>Google Pixel2 RearCamera</item>
+        <item>HTC U11+ RearCamera</item>
+        <item>HTC U12+ RearCamera</item>
+        <item>Custom Calibration (File select...)</item>
+    </string-array>
+    <string-array name="pref_CameraResource_ADAS_CameraModuleEntryValues">
+        <item>5</item>
+        <item>3</item>
+        <item>8</item>
+        <item>1</item>
+    </string-array>
+    <string name="pref_CameraResource_ADAS_CameraModuleEntryDefaultValue_0">1</string>
+    <string name="pref_CameraResource_ADAS_CameraModuleEntryDefaultValue_1">1</string>
+    <string name="pref_CameraResource_ADAS_CameraModuleEntryDefaultValue_2">1</string>
+    <string name="pref_CameraResource_ADAS_CameraModuleEntryDefaultValue_3">1</string>
+
+    <!--=[Configuration]=======================================================================-->
+    <string name="prefKey_CameraResource_CameraConfigurationPath_0">prefKey_CameraResource_CameraConfigurationPath_0</string>
+    <string name="prefKey_CameraResource_CameraConfigurationPath_1">prefKey_CameraResource_CameraConfigurationPath_1</string>
+    <string name="prefKey_CameraResource_CameraConfigurationPath_2">prefKey_CameraResource_CameraConfigurationPath_2</string>
+    <string name="prefKey_CameraResource_CameraConfigurationPath_3">prefKey_CameraResource_CameraConfigurationPath_3</string>
+    <string name="prefTitle_CameraResource_CameraConfigurationPathTitle">Camera Calibration Configuration Path</string>
+    <string name="prefDefaultValue_CameraResource_CameraConfigurationPathDefaultValue">""</string>
+
+    <!--=[Camera Install Height]=======================================================================-->
+    <string name="prefKey_CameraResource_CameraInstallHeight_0">prefKey_CameraResource_CameraInstallHeight_0</string>
+    <string name="prefKey_CameraResource_CameraInstallHeight_1">prefKey_CameraResource_CameraInstallHeight_1</string>
+    <string name="prefKey_CameraResource_CameraInstallHeight_2">prefKey_CameraResource_CameraInstallHeight_2</string>
+    <string name="prefKey_CameraResource_CameraInstallHeight_3">prefKey_CameraResource_CameraInstallHeight_3</string>
+    <string name="prefTitle_CameraResource_CameraInstallHeightTitle">Camera Install Height</string>
+    <string name="prefDefaultValue_CameraResource_CameraInstallHeightDefaultValue">"145"</string>
+
+
+    <!--=[Configuration]=======================================================================-->
+    <string name="prefKey_CameraResource_CameraToCenterOffset_0">prefKey_CameraResource_CameraToCenterOffset_0</string>
+    <string name="prefKey_CameraResource_CameraToCenterOffset_1">prefKey_CameraResource_CameraToCenterOffset_1</string>
+    <string name="prefKey_CameraResource_CameraToCenterOffset_2">prefKey_CameraResource_CameraToCenterOffset_2</string>
+    <string name="prefKey_CameraResource_CameraToCenterOffset_3">prefKey_CameraResource_CameraToCenterOffset_3</string>
+    <string name="prefTitle_CameraResource_CameraToCenterOffsetTitle">The Offset Between Camera To Vehicle Center Line</string>
+    <string name="prefDefaultValue_CameraResource_CameraToCenterOffsetDefaultValue">"0"</string>
+</resources>

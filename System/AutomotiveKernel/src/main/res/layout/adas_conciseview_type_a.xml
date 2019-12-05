@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- *****************************************************************************************
+        Define the Vertical GudeLines ....  These lines will decide the ratio of panel units
+       ***************************************************************************************  -->
+    <android.support.constraint.Guideline
+        android:id="@+id/v16p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.161616" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/v24p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.24" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/v28p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.28" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/v32p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.323232" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/v39p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.39" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/v42p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.42" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/v44p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.44" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/v50p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/v56p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.56" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/v58p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.58" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/v61p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.61" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/v72p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.72" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/v83p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.8384" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/vSystemVehicle_Left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.28" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/vSystemVehicle_Right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.72" />
+    <!-- *****************************************************************************************
+        Define the Horizontal GudeLines ....  These lines will decide the ratio of panel units
+       ***************************************************************************************  -->
+    <android.support.constraint.Guideline
+        android:id="@+id/h9p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.09638" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/h19p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1921" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/h26p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.2651" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/h32p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.32" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/h34p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.34" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/h36p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.36" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/h38p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.3875" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/h43p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.43" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/h48p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.48" />
+    <android.support.constraint.Guideline
+        android:id="@+id/h52p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.52" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/h70p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.70" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/h74p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.74" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/h84p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.84" />
+    <android.support.constraint.Guideline
+        android:id="@+id/h89p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.89" />
+
+    <!-- *****************************************************************************************
+        Define the UI component
+       ***************************************************************************************  -->
+    <!-- background -->
+    <ImageView
+        android:id="@+id/Background"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="fitXY"
+        android:background="@null"
+        android:src="@drawable/adas_conciseview_bkg"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+
+
+    <!-- Speed -->
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="fitCenter"
+        android:background="@null"
+        android:src="@drawable/adas_conciseview_speed_icon"
+        app:layout_constraintLeft_toLeftOf="@+id/v44p"
+        app:layout_constraintRight_toRightOf="@+id/v56p"
+        app:layout_constraintTop_toBottomOf="@+id/h9p"
+        app:layout_constraintBottom_toTopOf="@+id/h19p" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/VehicleSpeed"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@null"
+        android:gravity="center"
+        android:textColor="#02EFFF"
+        android:text="66"
+        android:textStyle="bold"
+        android:maxLines="1"
+        app:autoSizeTextType="uniform"
+        app:autoSizeMinTextSize="1sp"
+        app:autoSizeMaxTextSize="22sp"
+        app:layout_constraintLeft_toLeftOf="@+id/v44p"
+        app:layout_constraintRight_toRightOf="@+id/v56p"
+        app:layout_constraintTop_toBottomOf="@+id/h19p"
+        app:layout_constraintBottom_toTopOf="@+id/h26p" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/SpeedUnit"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="fitCenter"
+        android:textColor="#FFFFFF"
+        android:text="Km/h"
+        android:gravity="center"
+        android:maxLines="1"
+        app:autoSizeTextType="uniform"
+        app:autoSizeMinTextSize="1sp"
+        app:autoSizeMaxTextSize="22sp"
+        app:layout_constraintLeft_toLeftOf="@+id/v44p"
+        app:layout_constraintRight_toRightOf="@+id/v56p"
+        app:layout_constraintTop_toBottomOf="@+id/h26p"
+        app:layout_constraintBottom_toTopOf="@+id/h32p" />
+
+    <!-- Lane image -->
+    <ImageView
+        android:id="@+id/LaneDetectionImage"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@null"
+        android:src="@drawable/adas_conciseview_lane_detected"
+        app:layout_constraintLeft_toLeftOf="@+id/v16p"
+        app:layout_constraintRight_toRightOf="@+id/v83p"
+        app:layout_constraintTop_toBottomOf="@+id/h38p"
+        app:layout_constraintBottom_toTopOf="@+id/h70p" />
+
+    <!-- Forward Vehicle image -->
+    <ImageView
+        android:id="@+id/ForwardVehicleImage"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="fitCenter"
+        android:background="@null"
+        android:src="@drawable/adas_conciseview_forward_vehicle_normal"
+        app:layout_constraintLeft_toLeftOf="@+id/v42p"
+        app:layout_constraintRight_toRightOf="@+id/v58p"
+        app:layout_constraintTop_toBottomOf="@+id/h34p"
+        app:layout_constraintBottom_toTopOf="@+id/h48p" />
+
+    <!-- System Vehicle image -->
+    <!--<ImageView-->
+        <!--android:id="@+id/SystemVehicleImage"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:scaleType="fitCenter"-->
+        <!--android:background="@null"-->
+        <!--android:src="@drawable/adas_conciseview_system_vehicle"-->
+        <!--app:layout_constraintLeft_toLeftOf="@+id/v28p"-->
+        <!--app:layout_constraintRight_toRightOf="@+id/v72p"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/h52p"-->
+        <!--app:layout_constraintBottom_toTopOf="@+id/h74p" />-->
+    <!--<ImageView-->
+        <!--android:id="@+id/SystemVehicleImage"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:scaleType="fitCenter"-->
+        <!--android:background="@null"-->
+        <!--android:src="@drawable/adas_conciseview_system_vehicle"-->
+        <!--app:layout_constraintLeft_toLeftOf="@+id/v28p"-->
+        <!--app:layout_constraintRight_toRightOf="@+id/v50p"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/h52p"-->
+        <!--app:layout_constraintBottom_toTopOf="@+id/h74p" />-->
+    <ImageView
+        android:id="@+id/SystemVehicleImage"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="fitCenter"
+        android:background="@null"
+        android:src="@drawable/adas_conciseview_system_vehicle"
+        app:layout_constraintLeft_toLeftOf="@+id/vSystemVehicle_Left"
+        app:layout_constraintRight_toRightOf="@+id/vSystemVehicle_Right"
+        app:layout_constraintTop_toBottomOf="@+id/h52p"
+        app:layout_constraintBottom_toTopOf="@+id/h74p" />
+
+    <!-- Direction Light -->
+    <ImageView
+        android:id="@+id/DirectionLight_Right"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="fitCenter"
+        android:background="@null"
+        android:src="@drawable/adas_conciseview_simple_direction_light_right"
+        app:layout_constraintLeft_toLeftOf="@+id/v50p"
+        app:layout_constraintRight_toRightOf="@+id/vSystemVehicle_Right"
+        app:layout_constraintTop_toBottomOf="@+id/h48p"
+        app:layout_constraintBottom_toTopOf="@+id/h52p" />
+    <ImageView
+        android:id="@+id/DirectionLight_Left"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="fitCenter"
+        android:background="@null"
+        android:src="@drawable/adas_conciseview_simple_direction_light_left"
+        app:layout_constraintLeft_toLeftOf="@+id/vSystemVehicle_Left"
+        app:layout_constraintRight_toRightOf="@+id/v50p"
+        app:layout_constraintTop_toBottomOf="@+id/h48p"
+        app:layout_constraintBottom_toTopOf="@+id/h52p" />
+
+
+    <!-- Speed Limit -->
+    <com.viatech.ui.SpeedLimitView
+        android:id="@+id/SpeedLimit"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="fitCenter"
+        android:background="@null"
+        android:src="@drawable/adas_conciseview_lane_detected"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintLeft_toLeftOf="@+id/v16p"
+        app:layout_constraintRight_toRightOf="@+id/v32p"
+        app:layout_constraintTop_toBottomOf="@+id/h26p"
+        app:layout_constraintBottom_toTopOf="@+id/h43p" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/SpeedLimitUnit"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="fitCenter"
+        android:textColor="#FFFFFF"
+        android:text="Km/h"
+        android:gravity="center"
+        android:maxLines="1"
+        app:autoSizeTextType="uniform"
+        app:autoSizeMinTextSize="1sp"
+        app:autoSizeMaxTextSize="22sp"
+        app:layout_constraintLeft_toLeftOf="@+id/v16p"
+        app:layout_constraintRight_toRightOf="@+id/v32p"
+        app:layout_constraintTop_toBottomOf="@+id/h43p"
+        app:layout_constraintBottom_toTopOf="@+id/h48p" />
+
+    <!-- Reaction Time -->
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/ReactionTime"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="fitCenter"
+        android:textColor="#FFFFFF"
+        android:text="2.6"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:maxLines="1"
+        app:autoSizeTextType="uniform"
+        app:autoSizeMinTextSize="1sp"
+        app:autoSizeMaxTextSize="22sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/h74p"
+        app:layout_constraintBottom_toTopOf="@+id/h84p" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/ReactopnTimeUnit"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="fitCenter"
+        android:textColor="#FFFFFF"
+        android:text="Sec"
+        android:gravity="center"
+        android:maxLines="1"
+        app:autoSizeTextType="uniform"
+        app:autoSizeMinTextSize="1sp"
+        app:autoSizeMaxTextSize="22sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/h84p"
+        app:layout_constraintBottom_toTopOf="@+id/h89p" />
+
+    <!--System Information-->
+    <TextView
+        android:id="@+id/VehicleBusInfo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="fitCenter"
+        android:textColor="#FF5555"
+        android:text="VehicleBus Disconnect"
+        android:gravity="center"
+        android:textSize="1sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintLeft_toLeftOf="@+id/v61p"
+        app:layout_constraintRight_toRightOf="@+id/v83p"
+        app:layout_constraintTop_toBottomOf="@+id/h26p"
+        app:layout_constraintBottom_toTopOf="@+id/h43p" />
+
+    <!--Weather Information-->
+    <ImageView
+        android:id="@+id/WeatherInfo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="fitCenter"
+        android:background="@null"
+        android:src="@drawable/weather_night"
+        app:layout_constraintLeft_toLeftOf="@+id/v61p"
+        app:layout_constraintRight_toRightOf="@+id/v83p"
+        app:layout_constraintTop_toTopOf="@+id/h26p"
+        app:layout_constraintBottom_toTopOf="@+id/h36p" />
+
+</android.support.constraint.ConstraintLayout>

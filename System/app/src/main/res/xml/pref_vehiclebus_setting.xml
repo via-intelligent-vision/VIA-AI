@@ -1,0 +1,43 @@
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:key="sourceMain">
+
+    <!--================================================================================-->
+    <PreferenceCategory
+        android:key="@string/prefKey_VehicleBus_RegularSettingCategory"
+        android:title="@string/prefTitle_VehicleBus_RegularSettingCategory"
+        >
+
+        <SwitchPreference
+            android:key="@string/prefKey_VehicleBus_BusStatus"
+            android:title="@string/prefTitle_VehicleBus_BusStatus"
+            android:defaultValue="@bool/prefDefaultValue_VehicleBus_BusStatus"
+            android:summaryOff="Disable"
+            android:summaryOn="Enable"
+            />
+
+        <ListPreference
+            android:key="@string/prefKey_VehicleBus_ProtocolType"
+            android:title="@string/prefTitle_VehicleBus_ProtocolType"
+            android:entries="@array/prefEntries_VehicleBus_ProtocolType"
+            android:entryValues="@array/prefValues_VehicleBus_ProtocolType"
+            android:defaultValue="@string/prefDefaultValue_VehicleBus_ProtocolType"
+            android:summary="    %s"
+            android:negativeButtonText="@null"
+            android:positiveButtonText="@null"
+            />
+
+        <ListPreference
+            android:key="@string/prefKey_VehicleBus_VehicleType"
+            android:title="@string/prefTitle_VehicleBus_VehicleType"
+            android:entries="@array/prefEntries_VehicleBus_VehicleType"
+            android:entryValues="@array/prefValues_VehicleBus_VehicleType"
+            android:defaultValue="@string/prefDefaultValue_VehicleBus_VehicleType"
+            android:summary="    %s"
+            android:negativeButtonText="@null"
+            android:positiveButtonText="@null"
+            />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

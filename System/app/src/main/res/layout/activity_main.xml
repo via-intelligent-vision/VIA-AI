@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true">
+
+    <!-- *****************************************************************************************
+           Define the  GudeLines ....  These lines will decide the ratio of panel units
+          ***************************************************************************************  -->
+    <!--Vertical-->
+    <android.support.constraint.Guideline
+        android:id="@+id/layoutActivityAdas_guideline_vertical_1p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.01" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/layoutActivityAdas_guideline_vertical_10p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.10" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/layoutActivityAdas_guideline_vertical_15p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.15" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/layoutActivityAdas_guideline_vertical_16p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.16" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/layoutActivityAdas_guideline_vertical_30p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.30" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/layoutActivityAdas_guideline_vertical_35p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.35" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/layoutActivityAdas_guideline_vertical_60p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.60" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/layoutActivityAdas_guideline_vertical_65p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.65" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/layoutActivityAdas_guideline_vertical_70p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.70" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/layoutActivityAdas_guideline_vertical_80p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.85" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/layoutActivityAdas_guideline_vertical_85p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.85" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/layoutActivityAdas_guideline_vertical_95p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95" />
+
+
+    <android.support.constraint.Guideline
+        android:id="@+id/layoutActivityAdas_guideline_vertical_90p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.90" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/layoutActivityAdas_guideline_vertical_98p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.98" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/layoutActivityAdas_guideline_vertical_99p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.99" />
+
+    <!--Horizontal-->
+    <android.support.constraint.Guideline
+        android:id="@+id/layoutActivityAdas_guideline_horizontal_1p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.01" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/layoutActivityAdas_guideline_horizontal_10p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.10" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/layoutActivityAdas_guideline_horizontal_15p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.15" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/layoutActivityAdas_guideline_horizontal_20p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.20" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/layoutActivityAdas_guideline_horizontal_30p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.30" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/layoutActivityAdas_guideline_horizontal_40p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.40" />
+
+
+    <android.support.constraint.Guideline
+        android:id="@+id/layoutActivityAdas_guideline_horizontal_50p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.50" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/layoutActivityAdas_guideline_horizontal_60p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.60" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/layoutActivityAdas_guideline_horizontal_65p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.65" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/layoutActivityAdas_guideline_horizontal_70p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.70" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/layoutActivityAdas_guideline_horizontal_80p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.80" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/layoutActivityAdas_guideline_horizontal_85p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.85" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/layoutActivityAdas_guideline_horizontal_95p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.95" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/layoutActivityAdas_guideline_horizontal_99p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.99" />
+    <!-- *****************************************************************************************
+       Define the  UI
+      ***************************************************************************************  -->
+    <!-- cameraDisplay-->
+    <com.viatech.utility.gles.VIASurfaceView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/layoutActivityAdas_CameraDisplayView"/>
+
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="fitXY"
+        android:background="@null"
+        android:src="@drawable/top_mask"
+        android:layout_gravity="center"
+        android:alpha="0.8"
+        app:layout_constraintDimensionRatio="1920:253"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+
+    <!--AdasEffectView-->
+    <com.viatech.via_ai.UI.ADASEffectOverlayView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/layoutActivityAdas_AdasEffectView"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/VehicleSpeed"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="3dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:text="80"
+        android:textColor="#AA33AAFF"
+        android:maxLines="1"
+        app:autoSizeTextType="uniform"
+        app:autoSizeMinTextSize="1sp"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/layoutActivityAdas_guideline_horizontal_40p"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+
+    <com.nightonke.boommenu.BoomMenuButton
+        android:id="@+id/layoutActivityAdas_BMB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:bmb_buttonEnum="ham"
+        app:bmb_dotRadius="0dp"
+        app:bmb_dimColor="#00FFFFFF"
+        app:bmb_shadowColor="#00FFFFFF"
+        app:bmb_highlightedColor="#00FFFFFF"
+        app:bmb_normalColor="#00FFFFFF"
+        app:bmb_piecePlaceEnum="piecePlace_ham_2"
+        app:bmb_buttonPlaceEnum="buttonPlace_sc_2_1"
+        app:layout_constraintTop_toTopOf="@+id/layoutActivityAdas_guideline_horizontal_85p"
+        app:layout_constraintLeft_toLeftOf="@+id/layoutActivityAdas_guideline_vertical_90p"
+        app:layout_constraintRight_toRightOf="@+id/layoutActivityAdas_guideline_vertical_99p">
+
+    </com.nightonke.boommenu.BoomMenuButton>
+
+
+    <ImageView
+        android:id="@+id/BusStatus"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="5dp"
+        android:scaleType="fitCenter"
+        android:background="@null"
+        android:src="@drawable/icon_small_bus_disconnect"
+        android:layout_gravity="center"
+        android:alpha="0.8"
+        app:layout_constraintDimensionRatio="488:422"
+        app:layout_constraintTop_toTopOf="@+id/layoutActivityAdas_guideline_horizontal_20p"
+        app:layout_constraintLeft_toLeftOf="@+id/layoutActivityAdas_guideline_vertical_90p"
+        app:layout_constraintRight_toRightOf="@+id/layoutActivityAdas_guideline_vertical_99p" />
+
+    <ImageView
+        android:id="@+id/LKSStatus"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="5dp"
+        android:scaleType="fitCenter"
+        android:background="@null"
+        android:src="@drawable/icon_small_lks_off"
+        android:layout_gravity="center"
+        android:alpha="0.8"
+        app:layout_constraintDimensionRatio="488:422"
+        app:layout_constraintTop_toBottomOf="@+id/BusStatus"
+        app:layout_constraintLeft_toLeftOf="@+id/BusStatus"
+        app:layout_constraintRight_toRightOf="@+id/BusStatus" />
+
+
+    <ImageView
+        android:id="@+id/ACCStatus"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="5dp"
+        android:scaleType="fitCenter"
+        android:background="@null"
+        android:src="@drawable/icon_small_acc_off"
+        android:layout_gravity="center"
+        android:alpha="0.8"
+        app:layout_constraintDimensionRatio="488:422"
+        app:layout_constraintTop_toBottomOf="@+id/LKSStatus"
+        app:layout_constraintLeft_toLeftOf="@+id/LKSStatus"
+        app:layout_constraintRight_toRightOf="@+id/LKSStatus" />
+
+    <com.viatech.via_ai.UI.BatteryStatusView
+        android:id="@+id/BatteryStatus"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintDimensionRatio="3:1"
+        app:layout_constraintTop_toTopOf="@+id/layoutActivityAdas_guideline_horizontal_1p"
+        app:layout_constraintLeft_toLeftOf="@+id/layoutActivityAdas_guideline_vertical_90p"
+        app:layout_constraintRight_toRightOf="@+id/layoutActivityAdas_guideline_vertical_99p" />
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:background="@null"
+        android:src="@drawable/setting_button_type_b_bkg"
+        android:layout_gravity="center"
+        android:alpha="0.6"
+        app:layout_constraintTop_toTopOf="@+id/layoutActivityAdas_BMB"
+        app:layout_constraintBottom_toBottomOf="@+id/layoutActivityAdas_guideline_horizontal_99p"
+        app:layout_constraintLeft_toLeftOf="@+id/layoutActivityAdas_BMB"
+        app:layout_constraintRight_toRightOf="@+id/layoutActivityAdas_BMB" />
+
+    <!--<com.via.adas.userinterface.UI_SystemView.ConciseView-->
+        <!--android:id="@+id/layoutActivityAdas_ConciseDetectionView_Forward"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:weightSum="1"-->
+        <!--android:alpha="0.7"-->
+        <!--app:layout_constraintDimensionRatio="1:1"-->
+        <!--app:layout_constraintTop_toTopOf="@+id/layoutActivityAdas_guideline_horizontal_1p"-->
+        <!--app:layout_constraintBottom_toBottomOf="@+id/layoutActivityAdas_guideline_horizontal_40p"-->
+        <!--app:layout_constraintLeft_toLeftOf="@+id/layoutActivityAdas_guideline_vertical_1p"-->
+        <!--app:layout_constraintRight_toRightOf="@+id/layoutActivityAdas_guideline_vertical_30p"-->
+        <!--/>-->
+
+
+    <com.viatech.via_ai.UI.CalibrationErrorView
+        android:id="@+id/CalibrationErrorView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible">
+    </com.viatech.via_ai.UI.CalibrationErrorView>
+
+    <!--Progress Laoyut ,  This layout will overlap on the top of main layout when loading-->
+    <com.viatech.via_ai.UI.LoadingWrapper
+        android:id="@+id/layoutActivityAdas_LoadingLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+    </com.viatech.via_ai.UI.LoadingWrapper>
+
+</android.support.constraint.ConstraintLayout>

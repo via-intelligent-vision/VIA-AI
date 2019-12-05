@@ -1,0 +1,187 @@
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:key="sourceMain">
+
+    <!--================================================================================-->
+    <PreferenceCategory
+        android:key="@string/prefKey_ADAS_RegularSettingCategory"
+        android:title="@string/prefTitle_ADAS_RegularSettingCategory"
+        >
+
+        <com.viatech.via_ai.Preferences.FileDialogPreference
+            android:key="@string/prefKey_ADAS_ConfigurationPath"
+            android:title="@string/prefTitle_ADAS_ConfigurationPathTitle"
+            android:defaultValue="@string/prefDefaultValue_ADAS_ConfigurationPathDefaultValue"
+            />
+
+        <com.viatech.via_ai.Preferences.FileDialogPreference
+            android:key="@string/prefKey_ADAS_AutomotiveConfigurationPath"
+            android:title="@string/prefTitle_ADAS_AutomotiveConfigurationPathTitle"
+            android:defaultValue="@string/prefDefaultValue_ADAS_AutomotiveConfigurationPathDefaultValue"
+            />
+    </PreferenceCategory>
+
+
+    <!--================================================================================-->
+    <PreferenceCategory
+        android:key="@string/prefKey_ADAS_AudioSettingCategory"
+        android:title="@string/prefTitle_ADAS_AudioSettingCategory"
+        >
+
+        <SwitchPreference
+            android:key="@string/prefKey_ADAS_TTS_Status"
+            android:title="@string/prefTtitle_ADAS_TTS_Status"
+            android:defaultValue="@bool/prefDefaultValue_ADAS_TTS_Status"
+            android:summaryOff="@string/prefSummaryOff_ADAS_TTS_Status"
+            android:summaryOn="@string/prefSummaryOn_ADAS_TTS_Status"
+            />
+        <SwitchPreference
+            android:key="@string/prefKey_ADAS_Beep_Status"
+            android:title="@string/prefTtitle_ADAS_Beep_Status"
+            android:defaultValue="@bool/prefDefaultValue_ADAS_Beep_Status"
+            android:summaryOff="@string/prefSummaryOff_ADAS_Beep_Status"
+            android:summaryOn="@string/prefSummaryOn_ADAS_Beep_Status"
+            />
+    </PreferenceCategory>
+
+
+
+
+    <!--=[ LDW ]==========================================================================-->
+    <PreferenceCategory
+        android:key="@string/prefKey_ADAS_LDW_DetectorCategory"
+        android:title="@string/prefTitle_ADAS_LDW_DetectorCategory" >
+
+        <SwitchPreference
+            android:key="@string/prefKey_ADAS_LDW_DetectorStatus"
+            android:title="@string/prefTtitle_ADAS_LDW_DetectorStatus"
+            android:defaultValue="@bool/prefDefaultValue_ADAS_LDW_DetectorStatus"
+            android:summaryOff="Disable"
+            android:summaryOn="Enable"
+            />
+
+        <ListPreference
+            android:key="@string/prefKey_ADAS_LDW_DetectorEnableSpeed"
+            android:title="@string/prefTtitle_ADAS_LDW_DetectorEnableSpeed"
+            android:entries="@array/prefEntries_ADAS_LDW_DetectorEnableSpeed"
+            android:entryValues="@array/prefValue_ADAS_LDW_DetectorEnableSpeed"
+            android:defaultValue="@string/prefDefaultValue_ADAS_LDW_DetectorEnableSpeed"
+            android:summary="    %s"
+            android:negativeButtonText="@null"
+            android:positiveButtonText="@null"
+            />
+
+        <SwitchPreference
+            android:key="@string/prefKey_ADAS_LDW_WarningAudio"
+            android:title="@string/prefTtitle_ADAS_LDW_WarningAudio"
+            android:defaultValue="@bool/prefDefaultValue_ADAS_LDW_WarningAudio"
+            android:summaryOff="Disable"
+            android:summaryOn="Enable"
+            />
+    </PreferenceCategory>
+
+    <!--=[ FCW ]==========================================================================-->
+    <PreferenceCategory
+        android:key="@string/prefKey_ADAS_FCW_DetectorCategory"
+        android:title="@string/prefTitle_ADAS_FCW_DetectorCategory" >
+
+        <SwitchPreference
+            android:key="@string/prefKey_ADAS_FCW_DetectorStatus"
+            android:title="@string/prefTtitle_ADAS_FCW_DetectorStatus"
+            android:defaultValue="@bool/prefDefaultValue_ADAS_FCW_DetectorStatus"
+            android:summaryOff="Disable"
+            android:summaryOn="Enable"
+            />
+
+        <SwitchPreference
+            android:key="@string/prefKey_ADAS_FCW_DetectorMode"
+            android:title="@string/prefTtitle_ADAS_FCW_DetectorMode"
+            android:defaultValue="@bool/prefDefaultValue_ADAS_FCW_DetectorMode"
+            android:summaryOn="@string/prefSummaryOn_ADAS_FCW_DetectorMode"
+            android:summaryOff="@string/prefSummaryOff_ADAS_FCW_DetectorMode"
+            />
+
+        <SwitchPreference
+            android:key="@string/prefKey_ADAS_FCW_WarningAudio"
+            android:title="@string/prefTtitle_ADAS_FCW_WarningAudio"
+            android:defaultValue="@bool/prefDefaultValue_ADAS_FCW_WarningAudio"
+            android:summaryOff="Disable"
+            android:summaryOn="Enable"
+            />
+    </PreferenceCategory>
+
+    <!--=[ SLD ]==========================================================================-->
+    <PreferenceCategory
+        android:key="@string/prefKey_ADAS_SLD_DetectorCategory"
+        android:title="@string/prefTitle_ADAS_SLD_DetectorCategory" >
+
+        <SwitchPreference
+            android:key="@string/prefKey_ADAS_SLD_DetectorStatus"
+            android:title="@string/prefTtitle_ADAS_SLD_DetectorStatus"
+            android:defaultValue="@bool/prefDefaultValue_ADAS_SLD_DetectorStatus"
+            android:summaryOff="Disable"
+            android:summaryOn="Enable"
+            />
+
+        <SwitchPreference
+            android:key="@string/prefKey_ADAS_SLD_WarningAudio"
+            android:title="@string/prefTtitle_ADAS_SLD_WarningAudio"
+            android:defaultValue="@bool/prefDefaultValue_ADAS_SLD_WarningAudio"
+            android:summaryOff="Disable"
+            android:summaryOn="Enable"
+            />
+    </PreferenceCategory>
+
+
+    <!--=[ BSD ]==========================================================================-->
+    <PreferenceCategory
+        android:key="@string/prefKey_ADAS_BSD_DetectorCategory"
+        android:title="@string/prefTitle_ADAS_BSD_DetectorCategory" >
+
+        <SwitchPreference
+            android:key="@string/prefKey_ADAS_BSD_L_DetectorStatus"
+            android:title="@string/prefTtitle_ADAS_BSD_L_DetectorStatus"
+            android:defaultValue="@bool/prefDefaultValue_ADAS_BSD_L_DetectorStatus"
+            android:summaryOff="Disable"
+            android:summaryOn="Enable"
+            />
+        <SwitchPreference
+            android:key="@string/prefKey_ADAS_BSD_R_DetectorStatus"
+            android:title="@string/prefTtitle_ADAS_BSD_R_DetectorStatus"
+            android:defaultValue="@bool/prefDefaultValue_ADAS_BSD_R_DetectorStatus"
+            android:summaryOff="Disable"
+            android:summaryOn="Enable"
+            />
+
+        <SwitchPreference
+            android:key="@string/prefKey_ADAS_BSD_WarningAudio"
+            android:title="@string/prefTtitle_ADAS_BSD_WarningAudio"
+            android:defaultValue="@bool/prefDefaultValue_ADAS_BSD_WarningAudio"
+            android:summaryOff="Disable"
+            android:summaryOn="Enable"
+            />
+    </PreferenceCategory>
+
+    <!--=[ TLD ]==========================================================================-->
+    <PreferenceCategory
+        android:key="@string/prefKey_ADAS_TLD_DetectorCategory"
+        android:title="@string/prefTitle_ADAS_TLD_DetectorCategory" >
+
+        <SwitchPreference
+            android:key="@string/prefKey_ADAS_TLD_DetectorStatus"
+            android:title="@string/prefTtitle_ADAS_TLD_DetectorStatus"
+            android:defaultValue="@bool/prefDefaultValue_ADAS_TLD_DetectorStatus"
+            android:summaryOff="Disable"
+            android:summaryOn="Enable"
+            />
+
+        <SwitchPreference
+            android:key="@string/prefKey_ADAS_TLD_WarningAudio"
+            android:title="@string/prefTtitle_ADAS_TLD_WarningAudio"
+            android:defaultValue="@bool/prefDefaultValue_ADAS_TLD_WarningAudio"
+            android:summaryOff="Disable"
+            android:summaryOn="Enable"
+            />
+    </PreferenceCategory>
+
+</PreferenceScreen>

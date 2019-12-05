@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    android:id="@+id/DummyLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true">
+
+    <!-- *****************************************************************************************
+           Define the  GudeLines ....  These lines will decide the ratio of panel units
+          ***************************************************************************************  -->
+    <!--Vertical-->
+    <android.support.constraint.Guideline
+        android:id="@+id/v1p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.01" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/v10p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.10" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/v15p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.15" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/v25p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/v40p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.40" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/v85p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.85" />
+
+
+    <android.support.constraint.Guideline
+        android:id="@+id/v99p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.99" />
+
+    <!--Horizontal-->
+    <android.support.constraint.Guideline
+        android:id="@+id/h1p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.01" />
+
+
+    <android.support.constraint.Guideline
+        android:id="@+id/h20p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.20" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/h50p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/h85p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.85" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/h99p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.99" />
+    <!-- *****************************************************************************************
+       Define the  UI
+      ***************************************************************************************  -->
+    <!-- cameraDisplay-->
+    <com.viatech.utility.gles.VIASurfaceView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/CameraDisplayView"/>
+
+    <ImageView
+        android:id="@+id/Save"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:background="@null"
+        android:src="@drawable/save_button_bkg"
+        android:layout_gravity="center"
+        android:alpha="0.6"
+        app:layout_constraintTop_toTopOf="@+id/h85p"
+        app:layout_constraintBottom_toBottomOf="@+id/h99p"
+        app:layout_constraintLeft_toLeftOf="@+id/v85p"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <com.victor.loading.rotate.RotateLoading
+        android:id="@+id/CountProgress"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:loading_width="5dp"
+        app:loading_color="#AA339966"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintTop_toTopOf="@+id/h1p"
+        app:layout_constraintBottom_toBottomOf="@+id/h20p"
+        app:layout_constraintLeft_toLeftOf="@+id/v1p"
+        app:layout_constraintRight_toRightOf="@+id/v15p" />
+
+    <TextView
+        android:id="@+id/CountPercentage"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:textColor="#AA339966"
+        android:textStyle="bold"
+        android:text="100%"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintTop_toTopOf="@+id/CountProgress"
+        app:layout_constraintBottom_toBottomOf="@+id/CountProgress"
+        app:layout_constraintLeft_toLeftOf="@+id/CountProgress"
+        app:layout_constraintRight_toRightOf="@+id/CountProgress" />
+
+    <TextView
+        android:id="@+id/BoardWidthTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="start|center"
+        android:textColor="#33AA88"
+        android:textStyle="bold"
+        android:text="Board Width"
+        app:layout_constraintTop_toTopOf="@+id/h20p"
+        app:layout_constraintLeft_toLeftOf="@+id/v10p"
+        app:layout_constraintRight_toRightOf="@+id/v25p" />
+
+    <EditText
+        android:id="@+id/BoardWidth"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:background="#55FFFFFF"
+        android:textColor="#33AA88"
+        android:textStyle="bold"
+        android:inputType="number"
+        app:layout_constraintTop_toTopOf="@+id/BoardWidthTitle"
+        app:layout_constraintBottom_toBottomOf="@+id/BoardWidthTitle"
+        app:layout_constraintLeft_toRightOf="@+id/BoardWidthTitle"
+        app:layout_constraintRight_toRightOf="@+id/v40p" />
+
+
+    <TextView
+        android:id="@+id/BoardHeightTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="start|center"
+        android:textColor="#33AA88"
+        android:textStyle="bold"
+        android:text="Board Height"
+        app:layout_constraintTop_toBottomOf="@+id/BoardWidthTitle"
+        app:layout_constraintLeft_toLeftOf="@+id/v10p"
+        app:layout_constraintRight_toRightOf="@+id/v25p" />
+
+    <EditText
+        android:id="@+id/BoardHeight"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:background="#55FFFFFF"
+        android:textColor="#33AA88"
+        android:textStyle="bold"
+        android:inputType="number"
+        app:layout_constraintTop_toTopOf="@+id/BoardHeightTitle"
+        app:layout_constraintBottom_toBottomOf="@+id/BoardHeightTitle"
+        app:layout_constraintLeft_toRightOf="@+id/BoardWidthTitle"
+        app:layout_constraintRight_toRightOf="@+id/v40p" />
+
+    <TextView
+        android:id="@+id/GridSizeTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="start|center"
+        android:textColor="#33AA88"
+        android:textStyle="bold"
+        android:text="Grid Size"
+        app:layout_constraintTop_toBottomOf="@+id/BoardHeightTitle"
+        app:layout_constraintLeft_toLeftOf="@+id/v10p"
+        app:layout_constraintRight_toRightOf="@+id/v25p" />
+
+    <EditText
+        android:id="@+id/GridSize"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:background="#55FFFFFF"
+        android:textColor="#33AA88"
+        android:textStyle="bold"
+        android:hint="unit : cm"
+        android:inputType="numberDecimal"
+        app:layout_constraintTop_toTopOf="@+id/GridSizeTitle"
+        app:layout_constraintBottom_toBottomOf="@+id/GridSizeTitle"
+        app:layout_constraintLeft_toRightOf="@+id/GridSizeTitle"
+        app:layout_constraintRight_toRightOf="@+id/v40p" />
+
+    <TextView
+        android:id="@+id/ErrorHint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="start|center"
+        android:textColor="#EE5555"
+        android:textStyle="bold"
+        android:text="&lt;&lt;&lt;&lt; Error"
+        app:layout_constraintTop_toTopOf="@+id/h20p"
+        app:layout_constraintLeft_toLeftOf="@+id/v40p" />
+
+
+    <TextView
+        android:id="@+id/CalibrationInfo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:gravity="start|center"
+        android:textColor="#3388BB"
+        android:textStyle="bold"
+        android:text=""
+        android:visibility="invisible"
+        android:background="#22FFFFFF"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintTop_toBottomOf="@+id/GridSizeTitle"
+        app:layout_constraintBottom_toBottomOf="@+id/h99p"
+        app:layout_constraintLeft_toLeftOf="@+id/v1p"
+        app:layout_constraintRight_toRightOf="@+id/v85p" />
+
+    <!--Progress Laoyut ,  This layout will overlap on the top of main layout when loading-->
+    <com.viatech.via_ai.UI.LoadingWrapper
+        android:id="@+id/LoadingLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+    </com.viatech.via_ai.UI.LoadingWrapper>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,211 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory
+        android:title="Regular Configurations"
+        android:key="pref_CameraResource_ADAS">
+
+        <SwitchPreference
+            android:key="@string/prefKey_CameraResource_ADAS_FrameSource"
+            android:defaultValue="@bool/prefDefaultValue_CameraResource_ADAS_FrameSource"
+            android:title="Frame Source"
+            android:summaryOff="@string/prefSummaryOff_CameraResource_ADAS_FrameSource"
+            android:summaryOn="@string/prefSummaryOn_CameraResource_ADAS_FrameSource"
+            />
+
+        <com.viatech.via_ai.Preferences.VideoSelectPreference
+            android:key="@string/prefKey_CameraResource_ADAS_PlaybackPath"
+            android:defaultValue="@string/prefDefaultValue_CameraResource_ADAS_PlaybackPath"
+            android:title="Playback Video Path"
+            />
+
+        <ListPreference
+            android:key="@string/prefKey_CameraResource_ADAS_CameraDevices"
+            android:title="@string/prefTitle_CameraResource_ADAS_CameraDevices"
+            android:entries="@array/pref_CameraResource_ADAS_CameraDevicesEntries"
+            android:entryValues="@array/pref_CameraResource_ADAS_CameraDevicesEntryValues"
+            android:defaultValue="@string/prefDefaultValue_CameraResource_ADAS_CameraDevicesEntry"
+            android:summary="    %s"
+            android:negativeButtonText="@null"
+            android:positiveButtonText="@null"
+             />
+
+        <ListPreference
+            android:key="@string/prefKey_CameraResource_ADAS_CameraPermutation"
+            android:title="@string/pref_CameraResource_ADAS_CameraPermutationTitle"
+            android:entries="@array/pref_CameraResource_ADAS_CameraPermutationEntries"
+            android:entryValues="@array/pref_CameraResource_ADAS_CameraPermutationEntryValues"
+            android:defaultValue="@string/prefDefaultValue_CameraResource_ADAS_CameraPermutationEntry"
+            android:summary="    %s"
+            android:negativeButtonText="@null"
+            android:positiveButtonText="@null"
+            />
+
+        <com.viatech.via_ai.Preferences.TextPreference
+            android:key="@string/prefKey_CameraResource_ADAS_CameraSourceWidth"
+            android:title="@string/prefTitle_CameraResource_ADAS_CameraSourceWidth"
+            android:defaultValue="@string/prefDefaultValue_CameraResource_ADAS_CameraSourceWidth"
+            />
+        <com.viatech.via_ai.Preferences.TextPreference
+            android:key="@string/prefKey_CameraResource_ADAS_CameraSourceHeight"
+            android:title="@string/prefTitle_CameraResource_ADAS_CameraSourceHeight"
+            android:defaultValue="@string/prefDefaultValue_CameraResource_ADAS_CameraSourceHeight"
+            />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Camera Frame Configurations - 0"
+        android:key="@string/prefKey_CameraResource_FrameCategory_0">
+
+        <com.viatech.via_ai.Preferences.ListPreferenceEx
+            android:key="@string/prefKey_CameraResource_ADAS_CameraModule_0"
+            android:title="@string/pref_CameraResource_ADAS_CameraModuleTitle"
+            android:entries="@array/pref_CameraResource_ADAS_CameraModuleEntries"
+            android:entryValues="@array/pref_CameraResource_ADAS_CameraModuleEntryValues"
+            android:defaultValue="@string/pref_CameraResource_ADAS_CameraModuleEntryDefaultValue_0"
+            android:summary="    %s"
+            android:negativeButtonText="@null"
+            android:positiveButtonText="@null"
+            />
+
+
+        <com.viatech.via_ai.Preferences.FileDialogPreference
+            android:key="@string/prefKey_CameraResource_CameraConfigurationPath_0"
+            android:title="@string/prefTitle_CameraResource_CameraConfigurationPathTitle"
+            android:defaultValue="@string/prefDefaultValue_CameraResource_CameraConfigurationPathDefaultValue"
+            />
+
+        <com.viatech.via_ai.Preferences.SeekbarPreference
+            android:key="@string/prefKey_CameraResource_CameraInstallHeight_0"
+            android:title="@string/prefTitle_CameraResource_CameraInstallHeightTitle"
+            android:defaultValue="@string/prefDefaultValue_CameraResource_CameraInstallHeightDefaultValue"
+            app:min="80"
+            app:max="300"
+            app:step="0.1"
+            app:unit="cm"
+            />
+
+        <com.viatech.via_ai.Preferences.SeekbarPreference
+            android:key="@string/prefKey_CameraResource_CameraToCenterOffset_0"
+            android:title="@string/prefTitle_CameraResource_CameraToCenterOffsetTitle"
+            android:defaultValue="@string/prefDefaultValue_CameraResource_CameraToCenterOffsetDefaultValue"
+            app:min="-20"
+            app:max="20"
+            app:step="0.1"
+            app:unit="cm"
+            />
+
+        <com.viatech.via_ai.Preferences.TextPreference
+            android:key="@string/prefKey_CameraResource_ADAS_FrameWidth_0"
+            android:title="@string/prefTitle_CameraResource_ADAS_FrameWidth"
+            android:defaultValue="@string/prefDefaultValue_CameraResource_ADAS_FrameWidth_0"
+            />
+        <com.viatech.via_ai.Preferences.TextPreference
+            android:key="@string/prefKey_CameraResource_ADAS_FrameHeight_0"
+            android:title="@string/prefTitle_CameraResource_ADAS_FrameHeight"
+            android:defaultValue="@string/prefDefaultValue_CameraResource_ADAS_FrameHeight_0"
+            />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Camera Frame Configurations - 1"
+        android:key="@string/prefKey_CameraResource_FrameCategory_1">
+
+        <com.viatech.via_ai.Preferences.ListPreferenceEx
+            android:key="@string/prefKey_CameraResource_ADAS_CameraModule_1"
+            android:title="@string/pref_CameraResource_ADAS_CameraModuleTitle"
+            android:entries="@array/pref_CameraResource_ADAS_CameraModuleEntries"
+            android:entryValues="@array/pref_CameraResource_ADAS_CameraModuleEntryValues"
+            android:defaultValue="@string/pref_CameraResource_ADAS_CameraModuleEntryDefaultValue_1"
+            android:summary="    %s"
+            android:negativeButtonText="@null"
+            android:positiveButtonText="@null"
+            />
+
+        <com.viatech.via_ai.Preferences.FileDialogPreference
+            android:key="@string/prefKey_CameraResource_CameraConfigurationPath_1"
+            android:title="@string/prefTitle_CameraResource_CameraConfigurationPathTitle"
+            android:defaultValue="@string/prefDefaultValue_CameraResource_CameraConfigurationPathDefaultValue"
+            />
+
+        <com.viatech.via_ai.Preferences.TextPreference
+            android:key="@string/prefKey_CameraResource_ADAS_FrameWidth_1"
+            android:title="@string/prefTitle_CameraResource_ADAS_FrameWidth"
+            android:defaultValue="@string/prefDefaultValue_CameraResource_ADAS_FrameWidth_1"
+            />
+        <com.viatech.via_ai.Preferences.TextPreference
+            android:key="@string/prefKey_CameraResource_ADAS_FrameHeight_1"
+            android:title="@string/prefTitle_CameraResource_ADAS_FrameHeight"
+            android:defaultValue="@string/prefDefaultValue_CameraResource_ADAS_FrameHeight_1"
+            />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Camera Frame Configurations - 2"
+        android:key="@string/prefKey_CameraResource_FrameCategory_2">
+
+        <com.viatech.via_ai.Preferences.ListPreferenceEx
+            android:key="@string/prefKey_CameraResource_ADAS_CameraModule_2"
+            android:title="@string/pref_CameraResource_ADAS_CameraModuleTitle"
+            android:entries="@array/pref_CameraResource_ADAS_CameraModuleEntries"
+            android:entryValues="@array/pref_CameraResource_ADAS_CameraModuleEntryValues"
+            android:defaultValue="@string/pref_CameraResource_ADAS_CameraModuleEntryDefaultValue_2"
+            android:summary="    %s"
+            android:negativeButtonText="@null"
+            android:positiveButtonText="@null"
+            />
+
+        <com.viatech.via_ai.Preferences.FileDialogPreference
+            android:key="@string/prefKey_CameraResource_CameraConfigurationPath_2"
+            android:title="@string/prefTitle_CameraResource_CameraConfigurationPathTitle"
+            android:defaultValue="@string/prefDefaultValue_CameraResource_CameraConfigurationPathDefaultValue"
+            />
+
+        <com.viatech.via_ai.Preferences.TextPreference
+            android:key="@string/prefKey_CameraResource_ADAS_FrameWidth_2"
+            android:title="@string/prefTitle_CameraResource_ADAS_FrameWidth"
+            android:defaultValue="@string/prefDefaultValue_CameraResource_ADAS_FrameWidth_2"
+            />
+        <com.viatech.via_ai.Preferences.TextPreference
+            android:key="@string/prefKey_CameraResource_ADAS_FrameHeight_2"
+            android:title="@string/prefTitle_CameraResource_ADAS_FrameHeight"
+            android:defaultValue="@string/prefDefaultValue_CameraResource_ADAS_FrameHeight_2"
+            />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Camera Frame Configurations - 3"
+        android:key="@string/prefKey_CameraResource_FrameCategory_3">
+
+        <com.viatech.via_ai.Preferences.ListPreferenceEx
+            android:key="@string/prefKey_CameraResource_ADAS_CameraModule_3"
+            android:title="@string/pref_CameraResource_ADAS_CameraModuleTitle"
+            android:entries="@array/pref_CameraResource_ADAS_CameraModuleEntries"
+            android:entryValues="@array/pref_CameraResource_ADAS_CameraModuleEntryValues"
+            android:defaultValue="@string/pref_CameraResource_ADAS_CameraModuleEntryDefaultValue_3"
+            android:summary="    %s"
+            android:negativeButtonText="@null"
+            android:positiveButtonText="@null"
+            />
+
+        <com.viatech.via_ai.Preferences.FileDialogPreference
+            android:key="@string/prefKey_CameraResource_CameraConfigurationPath_3"
+            android:title="@string/prefTitle_CameraResource_CameraConfigurationPathTitle"
+            android:defaultValue="@string/prefDefaultValue_CameraResource_CameraConfigurationPathDefaultValue"
+            />
+
+        <com.viatech.via_ai.Preferences.TextPreference
+            android:key="@string/prefKey_CameraResource_ADAS_FrameWidth_3"
+            android:title="@string/prefTitle_CameraResource_ADAS_FrameWidth"
+            android:defaultValue="@string/prefDefaultValue_CameraResource_ADAS_FrameWidth_3"
+            />
+        <com.viatech.via_ai.Preferences.TextPreference
+            android:key="@string/prefKey_CameraResource_ADAS_FrameHeight_3"
+            android:title="@string/prefTitle_CameraResource_ADAS_FrameHeight"
+            android:defaultValue="@string/prefDefaultValue_CameraResource_ADAS_FrameHeight_3"
+            />
+    </PreferenceCategory>
+
+
+</PreferenceScreen>

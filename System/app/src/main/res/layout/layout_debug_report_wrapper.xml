@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#55000000">
+
+
+    <Button
+        android:id="@+id/layout_debug_report_wrapper_FastForwardButton"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:textSize="10sp"
+        android:layout_marginRight="50dp"
+        android:textStyle="bold|italic"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="Fast Forward"
+        android:maxLines="1"/>
+
+    <Button
+        android:id="@+id/layout_debug_report_wrapper_PauseResumeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:textSize="10sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintRight_toLeftOf="@+id/layout_debug_report_wrapper_FastForwardButton"
+        app:layout_constraintBottom_toTopOf="parent"
+        android:text="Resume"
+        android:maxLines="1"/>
+
+    <Button
+        android:id="@+id/layout_debug_report_wrapper_ComparisonButton"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:textSize="10sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintRight_toLeftOf="@+id/layout_debug_report_wrapper_PauseResumeButton"
+        app:layout_constraintBottom_toTopOf="parent"
+        android:text="Comparison"
+        android:maxLines="1"/>
+
+    <Button
+        android:id="@+id/layout_debug_report_wrapper_SaveXMLButton"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:textSize="10sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintRight_toLeftOf="@+id/layout_debug_report_wrapper_ComparisonButton"
+        app:layout_constraintBottom_toTopOf="parent"
+        android:text="SaveXML"
+        android:maxLines="1"/>
+
+    <!--<TextView-->
+        <!--android:id="@+id/layout_debug_report_wrapper_SLDFailView"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--app:layout_constraintRight_toLeftOf="@+id/layout_debug_report_wrapper_SLDFailButton"-->
+        <!--app:layout_constraintBottom_toTopOf="@+id/layout_debug_report_wrapper_PauseResumeButton"-->
+        <!--android:textStyle="bold|italic"-->
+        <!--android:text="0"-->
+        <!--android:singleLine="false"/>-->
+
+    <Button
+        android:id="@+id/layout_debug_report_wrapper_SLDFailButton"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:textSize="10sp"
+        android:layout_marginRight="50dp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/layout_debug_report_wrapper_PauseResumeButton"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="SLD Fail"
+        android:maxLines="1"/>
+
+    <!--<TextView-->
+        <!--android:id="@+id/layout_debug_report_wrapper_BSDFailView"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--app:layout_constraintRight_toLeftOf="@+id/layout_debug_report_wrapper_BSDFailButton"-->
+        <!--app:layout_constraintBottom_toTopOf="@+id/layout_debug_report_wrapper_SLDFailButton"-->
+        <!--android:textStyle="bold|italic"-->
+        <!--android:text="0"-->
+        <!--android:singleLine="false"/>-->
+
+    <Button
+        android:id="@+id/layout_debug_report_wrapper_BSDLeftFailButton"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:textSize="10sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/layout_debug_report_wrapper_PauseResumeButton"
+        app:layout_constraintRight_toLeftOf="@+id/layout_debug_report_wrapper_SLDFailButton"
+        android:text="BSD Left Fail"
+        android:maxLines="1"/>
+
+    <Button
+        android:id="@+id/layout_debug_report_wrapper_HideSystemUI"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:textSize="10sp"
+        android:layout_marginRight="50dp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/layout_debug_report_wrapper_AttentionCar_Right"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="Hide System UI"
+        android:maxLines="1"/>
+
+    <Button
+        android:id="@+id/layout_debug_report_wrapper_BSDRightFailButton"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:textSize="10sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/layout_debug_report_wrapper_PauseResumeButton"
+        app:layout_constraintRight_toLeftOf="@+id/layout_debug_report_wrapper_BSDLeftFailButton"
+        android:text="BSD Right Fail"
+        android:maxLines="1"/>
+
+    <!--<TextView-->
+        <!--android:id="@+id/layout_debug_report_wrapper_LDWSFailView"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--app:layout_constraintRight_toLeftOf="@+id/layout_debug_report_wrapper_LDWSFailButton"-->
+        <!--app:layout_constraintBottom_toTopOf="@+id/layout_debug_report_wrapper_BSDLeftFailButton"-->
+        <!--android:textStyle="bold|italic"-->
+        <!--android:text="0"-->
+        <!--android:singleLine="false"/>-->
+
+    <Button
+        android:id="@+id/layout_debug_report_wrapper_LDWSFailButton"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:textSize="10sp"
+        android:layout_marginRight="50dp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/layout_debug_report_wrapper_SLDFailButton"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="LDWS Fail"
+        android:maxLines="1"/>
+
+    <!--<TextView-->
+        <!--android:id="@+id/layout_debug_report_wrapper_FCWSFailView"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--app:layout_constraintRight_toLeftOf="@+id/layout_debug_report_wrapper_FCWSFailButton"-->
+        <!--app:layout_constraintBottom_toTopOf="@+id/layout_debug_report_wrapper_LDWSFailButton"-->
+        <!--android:textStyle="bold|italic"-->
+        <!--android:text="0"-->
+        <!--android:singleLine="false"/>-->
+
+    <Button
+        android:id="@+id/layout_debug_report_wrapper_FCWSCollisionDetectFailButton"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:textSize="10sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/layout_debug_report_wrapper_SLDFailButton"
+        app:layout_constraintRight_toLeftOf="@+id/layout_debug_report_wrapper_LDWSFailButton"
+        android:text="FCWS Collision detect Fail"
+        android:maxLines="1"/>
+
+    <Button
+        android:id="@+id/layout_debug_report_wrapper_FCWSObjectDetectFailButton"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:textSize="10sp"
+        android:layout_marginRight="50dp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/layout_debug_report_wrapper_LDWSFailButton"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="FCWS OBJ Detect Fail"
+        android:maxLines="1"/>
+
+    <Button
+        android:id="@+id/layout_debug_report_wrapper_FCWSCurrentWayFailButton"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:textSize="10sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/layout_debug_report_wrapper_LDWSFailButton"
+        app:layout_constraintRight_toLeftOf="@+id/layout_debug_report_wrapper_FCWSObjectDetectFailButton"
+        android:text="FCWS current way Fail"
+        android:maxLines="1"/>
+
+    <Button
+        android:id="@+id/layout_debug_report_wrapper_FCWSObjectNotExist"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:textSize="10sp"
+        android:layout_marginRight="50dp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/layout_debug_report_wrapper_FCWSCurrentWayFailButton"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="Object not exist"
+        android:maxLines="1"/>
+
+    <Button
+        android:id="@+id/layout_debug_report_wrapper_AttentionCar_Left"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:textSize="10sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/layout_debug_report_wrapper_FCWSObjectNotExist"
+        app:layout_constraintRight_toLeftOf="@+id/layout_debug_report_wrapper_AttentionCar_Right"
+        android:text="AttentionCar Left"
+        android:maxLines="1"/>
+
+    <Button
+        android:id="@+id/layout_debug_report_wrapper_AttentionCar_Right"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:textSize="10sp"
+        android:layout_marginRight="50dp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/layout_debug_report_wrapper_FCWSObjectNotExist"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="AttentionCar Right"
+        android:maxLines="1"/>
+
+    <TextView
+        android:id="@+id/layout_debug_report_wrapper_DataView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:textStyle="bold|italic"
+        android:text="data"
+        android:singleLine="false"/>
+
+    <TextView
+        android:id="@+id/layout_debug_report_wrapper_TitleView"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:textSize="10sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textStyle="bold|italic"
+        android:text="Debug Report Mode"
+        android:singleLine="false"/>
+
+    <EditText
+        android:id="@+id/layout_debug_report_wrapper_UpdateEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toTopOf="@+id/layout_debug_report_wrapper_SLDFailButton"
+        app:layout_constraintRight_toLeftOf="@+id/layout_debug_report_wrapper_FCWSCollisionDetectFailButton"/>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <android.support.constraint.Guideline
+        android:id="@+id/v15p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.15" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/v85p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.85" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/h15p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.15" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/h85p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.85" />
+
+    <ImageView
+        android:id="@+id/layoutSpeedLimitView_ImageView_SpeedLimit"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:background="@null"
+        android:src="@drawable/speed_limit_bkg"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/SpeedLimitValueText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="1dp"
+        android:gravity="center"
+        android:text="10"
+        android:textColor="#FFFFFF"
+        android:maxLines="1"
+        android:textStyle="bold"
+        app:autoSizeTextType="uniform"
+        app:autoSizeMinTextSize="1sp"
+        app:layout_constraintLeft_toLeftOf="@+id/v15p"
+        app:layout_constraintRight_toRightOf="@+id/v85p"
+        app:layout_constraintTop_toBottomOf="@+id/h15p"
+        app:layout_constraintBottom_toTopOf="@+id/h85p"/>
+
+</android.support.constraint.ConstraintLayout>

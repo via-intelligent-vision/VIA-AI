@@ -1,0 +1,36 @@
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:key="sourceMain">
+
+    <!--================================================================================-->
+    <PreferenceCategory
+        android:title="@string/prefTitle_System_AboutSystemCategory"
+        >
+
+        <com.viatech.via_ai.Preferences.TextPreference
+            android:key="@string/prefKey_System_ProductName"
+            android:title="@string/prefTitle_System_ProductName"
+            android:defaultValue="@string/prefDefaultValue_System_ProductName"
+            />
+
+        <com.viatech.via_ai.Preferences.TextPreference
+            android:key="@string/prefKey_System_BuildVersion"
+            android:title="@string/prefTitle_System_BuildVersion"
+            android:defaultValue="@string/prefDefaultValue_BuildVersion"
+            />
+
+        <com.viatech.via_ai.Preferences.TextPreference
+            android:key="@string/prefKey_System_KernelVersion"
+            android:title="@string/prefTitle_System_KernelVersion"
+            android:defaultValue="@string/prefDefaultValue_KernelVersion"
+            />
+
+        <com.viatech.via_ai.Preferences.TextPreference
+            android:key="@string/prefKey_System_DeveloperOptions"
+            android:title="@string/prefTitle_System_DeveloperOptions"
+            android:defaultValue="@string/prefDefaultValue_DeveloperOptions"
+            android:fragment="com.viatech.via_ai.Preferences.Fragments.DeveloperSettingFragment"/>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

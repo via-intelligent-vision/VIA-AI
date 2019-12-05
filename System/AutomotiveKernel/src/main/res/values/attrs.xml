@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SpeedLimitView">
+        <attr name="speedLimit" format="integer" />
+    </declare-styleable>
+
+    <!-- Attributes of  ConciseDetectionView_Forward -->
+    <declare-styleable name="ConciseView">
+        <attr name="vehicle_bus_connected" format="boolean" />
+        <attr name="vehicle_speed" format="integer" />
+        <attr name="speed_limit" format="integer" />
+        <attr name="speed_limit_visibility" format="boolean" />
+        <attr name="reaction_time" format="float" />
+        <attr name="reaction_time_visibility" format="boolean" />
+
+        <!--  enum value must be unique , and be synchronized with  com.via.adas.userinterface.UI_SystemView.ConciseView.ConciseStyleTypes -->
+        <attr name="concise_style" format="enum">
+            <enum name="type_a" value="0"/>
+            <enum name="type_b" value="1"/>
+        </attr>
+
+        <!--  enum value must be unique , and be synchronized with  om.via.adas.userinterface.UI_SystemView.ConciseView.LaneDepartureType  -->
+        <attr name="lane_departure_type" format="enum">
+            <enum name="no_detected" value="0"/>
+            <enum name="regular" value="1"/>
+            <enum name="departure_left" value="2"/>
+            <enum name="departure_right" value="3"/>
+        </attr>
+
+        <!--  enum value must be unique , and be synchronized with  com.via.adas.userinterface.UI_SystemView.ConciseView.ForwardObjectTypes -->
+        <attr name="forward_object" format="enum">
+            <enum name="no_detected" value="0"/>
+            <enum name="car" value="3"/>
+            <enum name="pedestrian" value="5"/>
+            <enum name="rider" value="22"/>
+        </attr>
+
+        <!--  enum value must be unique , and be synchronized with  com.via.adas.userinterface.UI_SystemView.ConciseView.ForwardReactionTypes -->
+        <attr name="forward_reaction" format="enum">
+            <enum name="unknown" value="0"/>
+            <enum name="remind" value="1"/>
+            <enum name="warning" value="2"/>
+            <enum name="urgent" value="3"/>
+        </attr>
+
+        <!--  enum value must be unique , and be synchronized with  com.via.adas.userinterface.UI_SystemView.ConciseView.UnitsOfMeasurement -->
+        <attr name="units_of_measurement" format="enum">
+            <enum name="Metric" value="0"/>
+            <enum name="Imperial" value="1"/>
+        </attr>
+
+    </declare-styleable>
+
+
+
+</resources>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<preference-headers
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <header android:fragment="com.viatech.via_ai.Preferences.Fragments.CameraSettingFragment"
+        android:icon="@drawable/icon_camera"
+        android:title="Camera Settings"
+        android:summary="    Configuration about camera type, module type and permutation ..." />
+
+    <header android:fragment="com.viatech.via_ai.Preferences.Fragments.RecorderSettingFragment"
+        android:icon="@drawable/icon_record_data"
+        android:title="Recorder Settings"
+        android:summary="    Configuration about recorder data, storage path, record time ...." />
+
+    <header android:fragment="com.viatech.via_ai.Preferences.Fragments.ADASSettingFragment"
+        android:icon="@drawable/icon_vehicle_bus"
+        android:title="ADAS Settings"
+        android:summary="    Configuration about ADAS detectors." />
+
+    <header android:fragment="com.viatech.via_ai.Preferences.Fragments.VehicleBusSettingFragment"
+        android:icon="@drawable/icon_vehicle_bus"
+        android:title="Vehicle Bus"
+        android:summary="    Configuration about CAN, J1939 ..." />
+
+    <header android:fragment="com.viatech.adas.webservices.UI.UserAccount.AccountManagerFragment"
+        android:icon="@drawable/icon_account"
+        android:title="User"
+        android:summary="    User informations" />
+
+    <header android:fragment="com.viatech.via_ai.Preferences.Fragments.SystemSettingFragment"
+        android:icon="@drawable/icon_system"
+        android:title="System">
+    </header>
+
+</preference-headers>

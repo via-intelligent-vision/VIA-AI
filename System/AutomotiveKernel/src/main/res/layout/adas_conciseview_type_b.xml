@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- *****************************************************************************************
+        Define the Vertical GudeLines ....  These lines will decide the ratio of panel units
+       ***************************************************************************************  -->
+    <android.support.constraint.Guideline
+        android:id="@+id/v2p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.02"  />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/v20p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.20" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/v30p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.30" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/v35p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.35" />
+
+
+    <android.support.constraint.Guideline
+        android:id="@+id/v65p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.65" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/v60p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.60" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/v70p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.70" />
+
+    <!-- *****************************************************************************************
+        Define the Horizontal GudeLines ....  These lines will decide the ratio of panel units
+       ***************************************************************************************  -->
+
+    <android.support.constraint.Guideline
+        android:id="@+id/h2p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.10" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/h30p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.30" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/h34p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.34" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/h38p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.3875" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/h48p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.48" />
+    <android.support.constraint.Guideline
+        android:id="@+id/h52p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.52" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/h70p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.70" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/h75p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.75" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/h80p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.80" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/h95p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.95" />
+
+
+    <android.support.constraint.Guideline
+        android:id="@+id/vSystemVehicle_Left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.28" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/vSystemVehicle_Right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.72" />
+
+    <!-- *****************************************************************************************
+        Define the UI component
+       ***************************************************************************************  -->
+    <!-- Lane image -->
+    <ImageView
+        android:id="@+id/LaneDetectionImage"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@null"
+        android:src="@drawable/adas_conciseview_lane_detected"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/h75p" />
+
+    <!-- Forward Vehicle image -->
+    <ImageView
+        android:id="@+id/ForwardVehicleImage"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="fitCenter"
+        android:background="@null"
+        android:src="@drawable/adas_conciseview_forward_vehicle_normal"
+        app:layout_constraintLeft_toLeftOf="@+id/v30p"
+        app:layout_constraintRight_toRightOf="@+id/v70p"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <!-- Reaction Time -->
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/ReactionTime"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="fitCenter"
+        android:textColor="#FFFFFF"
+        android:text="2.6"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:maxLines="1"
+        app:autoSizeTextType="uniform"
+        app:autoSizeMinTextSize="2sp"
+        app:layout_constraintLeft_toLeftOf="@+id/v35p"
+        app:layout_constraintRight_toRightOf="@+id/v65p"
+        app:layout_constraintTop_toBottomOf="@+id/h75p"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+<!--    <android.support.v7.widget.AppCompatTextView-->
+<!--        android:id="@+id/ReactionTimeUnit"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:paddingLeft="5dp"-->
+<!--        android:scaleType="fitCenter"-->
+<!--        android:textColor="#FFFFFF"-->
+<!--        android:text="S"-->
+<!--        android:gravity="start"-->
+<!--        android:maxLines="1"-->
+<!--        app:autoSizeTextType="uniform"-->
+<!--        app:autoSizeMinTextSize="2sp"-->
+<!--        app:layout_constraintLeft_toRightOf="@+id/ReactionTime"-->
+<!--        app:layout_constraintRight_toRightOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/h80p"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent" />-->
+
+    <TextView
+        android:id="@+id/ReactopnTimeUnit"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="fitCenter"
+        android:textColor="#FFFFFF"
+        android:text="s"
+        android:visibility="gone"
+        android:gravity="start|center"
+        app:layout_constraintLeft_toRightOf="@+id/v60p"
+        app:layout_constraintRight_toRightOf="@+id/v70p"
+        app:layout_constraintTop_toTopOf="@+id/ReactionTime"
+        app:layout_constraintBottom_toBottomOf="@+id/ReactionTime" />
+
+    <!--&lt;!&ndash; Speed Limit &ndash;&gt;-->
+    <!--<com.viatech.ui.SpeedLimitView-->
+        <!--android:id="@+id/SpeedLimit"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:scaleType="fitCenter"-->
+        <!--android:background="@null"-->
+        <!--android:src="@drawable/adas_conciseview_lane_detected"-->
+        <!--app:layout_constraintDimensionRatio="1:1"-->
+        <!--app:layout_constraintLeft_toLeftOf="@+id/v2p"-->
+        <!--app:layout_constraintRight_toRightOf="@+id/v20p"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/h2p"-->
+        <!--app:layout_constraintBottom_toTopOf="@+id/h30p" />-->
+
+    <!--<android.support.v7.widget.AppCompatTextView-->
+        <!--android:id="@+id/SpeedLimitUnit"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_margin="4dp"-->
+        <!--android:scaleType="fitCenter"-->
+        <!--android:textColor="#FFFFFF"-->
+        <!--android:text="Km/h"-->
+        <!--android:gravity="center|top"-->
+        <!--android:maxLines="1"-->
+        <!--app:autoSizeTextType="uniform"-->
+        <!--app:autoSizeMinTextSize="1sp"-->
+        <!--app:autoSizeMaxTextSize="22sp"-->
+        <!--app:layout_constraintLeft_toLeftOf="@+id/SpeedLimit"-->
+        <!--app:layout_constraintRight_toRightOf="@+id/SpeedLimit"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/SpeedLimit"-->
+        <!--app:layout_constraintBottom_toTopOf="@+id/h48p" />-->
+
+</android.support.constraint.ConstraintLayout>

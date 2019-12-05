@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/arts_background_public">
+
+    <!-- *****************************************************************************************
+       Define the  GudeLines ....  These lines will decide the ratio of panel units
+      ***************************************************************************************  -->
+    <!--Vertical-->
+    <android.support.constraint.Guideline
+        android:id="@+id/layoutActivityStartMenu_guideline_vertical_1p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.01" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/layoutActivityStartMenu_guideline_vertical_5p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/layoutActivityStartMenu_guideline_vertical_10p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.10" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/layoutActivityStartMenu_guideline_vertical_30p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.30" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/layoutActivityStartMenu_guideline_vertical_40p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.40" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/layoutActivityStartMenu_guideline_vertical_60p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.60" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/layoutActivityStartMenu_guideline_vertical_70p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.70" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/layoutActivityStartMenu_guideline_vertical_75p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.75" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/layoutActivityStartMenu_guideline_vertical_85p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.85" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/layoutActivityStartMenu_guideline_vertical_90p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.90" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/layoutActivityStartMenu_guideline_vertical_95p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/layoutActivityStartMenu_guideline_vertical_99p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.99" />
+
+    <!--horizontal-->
+    <android.support.constraint.Guideline
+        android:id="@+id/layoutActivityStartMenu_guideline_horizontal_5p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/layoutActivityStartMenu_guideline_horizontal_10p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.10" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/layoutActivityStartMenu_guideline_horizontal_15p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.15" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/layoutActivityStartMenu_guideline_horizontal_20p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.20" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/layoutActivityStartMenu_guideline_horizontal_75p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.75" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/layoutActivityStartMenu_guideline_horizontal_80p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.80" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/layoutActivityStartMenu_guideline_horizontal_95p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.95" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/layoutActivityStartMenu_guideline_horizontal_98p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.98" />
+
+    <!-- *****************************************************************************************
+      Define the UI
+     ***************************************************************************************  -->
+
+    <!--Setting Logo-->
+    <ImageButton
+        android:id="@+id/layoutActivityStartMenu_ImageButton_Settings"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:background="@null"
+        android:src="@drawable/setting_button_type_b_bkg"
+        android:layout_gravity="center"
+        android:alpha="0.7"
+        app:layout_constraintTop_toTopOf="@+id/layoutActivityStartMenu_guideline_horizontal_80p"
+        app:layout_constraintBottom_toBottomOf="@+id/layoutActivityStartMenu_guideline_horizontal_95p"
+        app:layout_constraintLeft_toLeftOf="@+id/layoutActivityStartMenu_guideline_vertical_85p"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <!--System start button-->
+    <ImageButton
+        android:id="@+id/layoutActivityStartMenu_ImageView_SystemStart"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:background="@null"
+        android:src="@drawable/system_start_button"
+        app:layout_constraintTop_toTopOf="@+id/layoutActivityStartMenu_guideline_horizontal_20p"
+        app:layout_constraintBottom_toBottomOf="@+id/layoutActivityStartMenu_guideline_horizontal_75p"
+        app:layout_constraintLeft_toLeftOf="@+id/layoutActivityStartMenu_guideline_vertical_30p"
+        app:layout_constraintRight_toRightOf="@+id/layoutActivityStartMenu_guideline_vertical_70p"/>
+
+   <!--Sub Menu-->
+    <ImageButton
+        android:id="@+id/layoutActivityStartMenu_ImageButton_Exit"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_gravity="right"
+        android:layout_weight="1"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:background="@null"
+        android:src="@drawable/exit_button_type_b_bkg"
+        android:alpha="0.7"
+        app:layout_constraintTop_toTopOf="@+id/layoutActivityStartMenu_guideline_horizontal_80p"
+        app:layout_constraintBottom_toBottomOf="@+id/layoutActivityStartMenu_guideline_horizontal_95p"
+        app:layout_constraintLeft_toLeftOf="@+id/layoutActivityStartMenu_guideline_vertical_1p"
+        app:layout_constraintRight_toRightOf="@+id/layoutActivityStartMenu_guideline_vertical_10p"/>
+
+</android.support.constraint.ConstraintLayout>

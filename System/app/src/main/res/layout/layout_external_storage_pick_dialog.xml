@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#882222CC">
+
+    <!--Title-->
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:maxLines="1"
+        android:text="External Storage (Writable)"
+        android:textColor="#FFFFFFFF"
+        android:textStyle="bold"
+        app:autoSizeTextType="uniform"
+        app:autoSizeMinTextSize="1sp"/>
+
+    <!--Text-->
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:layout_marginLeft="20dp"
+        android:maxLines="1"
+        android:text="Multiple writable storage found, choose one storage to access : "
+        android:textColor="#FFFFFFFF"
+        app:autoSizeTextType="uniform"
+        app:autoSizeMinTextSize="1sp"/>
+
+    <ListView
+        android:id="@+id/layoutExternalStoragePickDialog_StorageList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:cacheColorHint="@android:color/transparent"
+        android:layout_marginLeft="20dp"
+        android:divider="#CCCCCC"
+        android:dividerHeight="1dp" >
+    </ListView>
+</LinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="prefTitle_Developer">Developer settings</string>
+
+    <!--================================================================================-->
+    <color name="prefBkg_Developer">#1e641e</color>
+
+    <!--================================================================================-->
+    <string name="prefTitle_Developer_ADASCategory">ADAS Dev</string>
+    <string name="prefTitle_Developer_SystemCategory">System Dev</string>
+
+    <!--================================================================================-->
+    <string name="prefKey_Developer_CurveLaneDetection">prefKey_Developer_CurveLaneDetection</string>
+    <string name="prefTitle_Developer_CurveLaneDetection">Curve Lane Detection</string>
+    <bool name="prefDefaultValue_Developer_CurveLaneDetection">false</bool>
+    <string name="prefSummary_Developer_CurveLaneDetection_On">Enable</string>
+    <string name="prefSummary_Developer_CurveLaneDetection_Off">Disable</string>
+
+
+    <!--================================================================================-->
+    <string name="prefKey_Developer_ShowObjectBillboard">prefKey_Developer_ShowObjectBillboard</string>
+    <string name="prefTitle_Developer_ShowObjectBillboard">Show Object Billboard</string>
+    <bool name="prefDefaultValue_Developer_ShowObjectBillboard">false</bool>
+    <string name="prefSummary_Developer_ShowObjectBillboard_On">Visible</string>
+    <string name="prefSummary_Developer_ShowObjectBillboard_Off">Hide</string>
+
+    <!--================================================================================-->
+    <string name="prefKey_Developer_AutoLaunch">prefKey_Developer_AutoLaunch</string>
+    <string name="prefTitle_Developer_AutoLaunch">Auto Launch</string>
+    <bool name="prefDefaultValue_Developer_AutoLaunch">false</bool>
+    <string name="prefSummary_Developer_AutoLaunch_On">Launch application when system start.</string>
+    <string name="prefSummary_Developer_AutoLaunch_Off">Disable</string>
+
+
+</resources>

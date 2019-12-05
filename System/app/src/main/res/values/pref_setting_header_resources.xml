@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="prefKey_SettingHeader_CameraSettings">prefKey_SettingHeader_CameraSettings</string>
+    <string name="prefValue_SettingHeader_CameraSettings">"Configuration about camera type, module type and permutation ..."</string>
+
+    <string name="prefKey_SettingHeader_RecorderSettings">prefKey_SettingHeader_RecorderSettings</string>
+    <string name="prefValue_SettingHeader_RecorderSettings">"Configuration about recorder data, storage path, record time ...."</string>
+
+    <string name="prefKey_SettingHeader_ADASSettings">prefKey_SettingHeader_ADASSettings</string>
+    <string name="prefValue_SettingHeader_ADASSettings">"Configuration about ADAS detectors."</string>
+
+    <string name="prefKey_SettingHeader_VehicleBus">prefKey_SettingHeader_VehicleBus</string>
+    <string name="prefValue_SettingHeader_VehicleBus">"Configuration about CAN, J1939 ..."</string>
+
+
+    <string name="prefKey_SettingHeader_User">prefKey_SettingHeader_User</string>
+    <string name="prefValue_SettingHeader_User">"User informations"</string>
+
+    <string name="prefKey_SettingHeader_System">prefKey_SettingHeader_System</string>
+    <string name="prefValue_SettingHeader_System">"System"</string>
+
+</resources>

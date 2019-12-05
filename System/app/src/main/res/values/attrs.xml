@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SeekbarPreference">
+        <attr name="max" format="float"/>
+        <attr name="min" format="float"/>
+        <attr name="step" format="float"/>
+        <attr name="unit" format="string" />
+    </declare-styleable>
+</resources>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="prefTitle_System">System informations</string>
+
+    <!--================================================================================-->
+    <color name="prefBkg_System">#FF111144</color>
+
+    <!--================================================================================-->
+    <string name="prefTitle_System_AboutSystemCategory">About System</string>
+
+    <!--================================================================================-->
+    <string name="prefKey_System_ProductName">prefKey_System_ProductName</string>
+    <string name="prefTitle_System_ProductName">Product Name</string>
+    <string name="prefDefaultValue_System_ProductName">VIA ADAS System</string>
+
+    <!--================================================================================-->
+    <string name="prefKey_System_BuildVersion">prefKey_System_BuildVersion</string>
+    <string name="prefTitle_System_BuildVersion">Version</string>
+    <string name="prefDefaultValue_BuildVersion">v0.1</string>
+
+    <!--================================================================================-->
+    <string name="prefKey_System_KernelVersion">prefKey_System_KernelVersion</string>
+    <string name="prefTitle_System_KernelVersion">Kernel Version</string>
+    <string name="prefDefaultValue_KernelVersion">v0.1</string>
+
+    <!--================================================================================-->
+    <string name="prefKey_System_DeveloperOptions">prefKey_System_DeveloperOptions</string>
+    <string name="prefTitle_System_DeveloperOptions">Developer Options</string>
+    <string name="prefDefaultValue_DeveloperOptions">[ Developer only ]</string>
+
+
+</resources>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#77000000">
+
+
+    <android.support.constraint.Guideline
+        android:id="@+id/layoutLoadingWrapper_guideline_vertical_30p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.3" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/layoutLoadingWrapper_guideline_vertical_40p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.4" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/layoutLoadingWrapper_guideline_vertical_60p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.6" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/layoutLoadingWrapper_guideline_vertical_70p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.7" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/layoutLoadingWrapper_guideline_horizontal_30p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.30" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/layoutLoadingWrapper_guideline_horizontal_70p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.70" />
+
+    <com.victor.loading.rotate.RotateLoading
+        android:id="@+id/layoutActivityAdas_LoadingProgress"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:loading_width="10dp"
+        app:loading_color="#AA398a49"
+        android:layout_centerInParent="true"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintTop_toTopOf="@+id/layoutLoadingWrapper_guideline_horizontal_30p"
+        app:layout_constraintBottom_toBottomOf="@+id/layoutLoadingWrapper_guideline_horizontal_70p"
+        app:layout_constraintLeft_toLeftOf="@+id/layoutLoadingWrapper_guideline_vertical_30p"
+        app:layout_constraintRight_toRightOf="@+id/layoutLoadingWrapper_guideline_vertical_70p" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/layoutActivityAdas_LoadingNote"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:textStyle="bold|italic"
+        android:text="Loading ..."
+        android:textColor="#FF398a49"
+        android:maxLines="1"
+        app:autoSizeTextType="uniform"
+        app:autoSizeMinTextSize="1sp"
+        app:layout_constraintTop_toBottomOf="@+id/layoutActivityAdas_LoadingProgress"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@+id/layoutLoadingWrapper_guideline_vertical_40p"
+        app:layout_constraintRight_toRightOf="@+id/layoutLoadingWrapper_guideline_vertical_60p" />
+
+</android.support.constraint.ConstraintLayout>

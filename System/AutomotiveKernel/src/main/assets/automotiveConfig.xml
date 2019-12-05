@@ -1,0 +1,125 @@
+<?xml version="1.0"?>
+<opencv_storage>
+
+<GeometryDeviationCalculator>
+    <Param_WheelAngleGain>0.0</Param_WheelAngleGain>
+    <Param_minThetaX_Gain>0.0001</Param_minThetaX_Gain>
+    <Param_minThetaY_Gain>0.0</Param_minThetaY_Gain>
+    <Param_minThetaZ_Gain>0.0001</Param_minThetaZ_Gain>
+    <Param_minOffsetX_Gain>0.0</Param_minOffsetX_Gain>
+    <Param_minOffsetZ_Gain>0.00</Param_minOffsetZ_Gain>
+    <Param_EnableTunning>0</Param_EnableTunning>
+    
+    <Param_EnableSpeed>75</Param_EnableSpeed>
+    <Param_EnableSteerAngle>2.0</Param_EnableSteerAngle>
+    <Param_EnableLaneWidth>430</Param_EnableLaneWidth>
+</GeometryDeviationCalculator>
+
+<LaneModel>
+    <Param_LearnRate_cA>1.0</Param_LearnRate_cA>
+    <Param_LearnRate_cB>1.0</Param_LearnRate_cB>
+    <Param_LearnRate_cC>1.0</Param_LearnRate_cC>
+    
+    <Param_DriftMinFactor>1.0</Param_DriftMinFactor>
+    <Param_LearnRate_Drift>1.0</Param_LearnRate_Drift>
+</LaneModel>
+
+<Controller>
+  <LatitudePID>
+    <ctlP>
+      <Param>0.</Param>
+      <Param_InMinSpeed>10</Param_InMinSpeed>
+      <Param_InMaxSpeed>1.0</Param_InMaxSpeed></ctlP>
+    <ctlI>
+      <Param>0.</Param>
+      <Param_InMinSpeed>0.35</Param_InMinSpeed>
+      <Param_InMaxSpeed>0.13</Param_InMaxSpeed></ctlI>
+    <ctlD>
+      <Param>0.</Param>
+      <Param_InMinSpeed>1.25</Param_InMinSpeed>
+      <Param_InMaxSpeed>0.825</Param_InMaxSpeed></ctlD>
+    <ctlF>
+      <Param>0.</Param>
+      <Param_InMinSpeed>0.0</Param_InMinSpeed>
+      <Param_InMaxSpeed>0.0</Param_InMaxSpeed></ctlF>
+	  
+	<ActuatorSmootherFilter>
+      <Param_InMinSpeed>1.0</Param_InMinSpeed>
+      <Param_InMaxSpeed>0.2</Param_InMaxSpeed></ActuatorSmootherFilter>
+	  
+	<ctlK>
+      <Param>0.</Param>
+      <!-- Use predict model vx vy if value > 0.5 -->
+      <Param_InMinSpeed>0.0</Param_InMinSpeed>
+      <Param_InMaxSpeed>0.0</Param_InMaxSpeed>
+	  
+	  <Param_StiffnessGain>1.0</Param_StiffnessGain>
+	  
+	  <Param_B>-0.115108858112</Param_B>
+	  <Param_C>1.6616</Param_C>
+	  <Param_D>4977</Param_D>
+	  <Param_E>-0.16</Param_E>
+	  <Param_Friction>1.0</Param_Friction>
+	</ctlK>
+  </LatitudePID>
+  
+  
+  <IntuitiveController>
+    <ctlP>
+      <Param>0.</Param>
+      <Param_InMinSpeed>0</Param_InMinSpeed>
+      <Param_InMaxSpeed>0</Param_InMaxSpeed>
+	</ctlP>
+    <ctlI>
+      <Param>0.</Param>
+      <Param_InMinSpeed>0.068</Param_InMinSpeed>
+      <Param_InMaxSpeed>0.058</Param_InMaxSpeed>
+	</ctlI>
+    <ctlD>
+      <Param>0.</Param>
+      <Param_InMinSpeed>0.025</Param_InMinSpeed>
+      <Param_InMaxSpeed>0.025</Param_InMaxSpeed>	
+	</ctlD>
+  </IntuitiveController>
+  
+  <LatitudePlane>
+    <Param_UseKinematic>0</Param_UseKinematic>
+    <Param_ManualSpeed>0</Param_ManualSpeed>
+    <Param_ApplyDriverWheel>0</Param_ApplyDriverWheel>
+	<Param_ManualSteering>0</Param_ManualSteering>
+	<Param_PlaneUpdateTime>30</Param_PlaneUpdateTime>
+	
+	<Param_LaneLengthGain_MinSpeed>70</Param_LaneLengthGain_MinSpeed>
+	<Param_LaneLengthGain_MinValue>1.0</Param_LaneLengthGain_MinValue>
+	<Param_LaneLengthGain_MaxSpeed>130</Param_LaneLengthGain_MaxSpeed>
+	<Param_LaneLengthGain_MaxValue>1.0</Param_LaneLengthGain_MaxValue>
+	
+	
+	<Param_MPC_Gain_Offset>0.16</Param_MPC_Gain_Offset>
+    <Param_MPC_Gain_pB>0.15</Param_MPC_Gain_pB>
+	<Param_MPC_Time>2.4</Param_MPC_Time>
+	<Param_MPC_OutputPathIndex>1</Param_MPC_OutputPathIndex>
+	
+	<Param_IntuitiveSteering_MaxValue>-1.5</Param_IntuitiveSteering_MaxValue>
+	<Param_IntuitiveSteering_LearningRate>0.0</Param_IntuitiveSteering_LearningRate>
+    
+	<Param_RawPredectionFactor>0.0</Param_RawPredectionFactor>
+	
+	
+	<Param_AngleOffset_IN>0.0</Param_AngleOffset_IN>
+	<Param_AngleOffset_OUT>0.0</Param_AngleOffset_OUT>
+    
+    <Param_SteerTurningRateFactor>1.0</Param_SteerTurningRateFactor>
+    
+    <Param_LaneOffsetcm>0.0</Param_LaneOffsetcm>
+	
+    <Param_DriftMinFactor>-0.03</Param_DriftMinFactor>
+    <Param_LearnRate_Drift>0.01</Param_LearnRate_Drift>
+    
+  </LatitudePlane>  
+  <LongitudePlane>
+    <PlaneTimeStep>10</PlaneTimeStep>
+    <Speed>0</Speed>
+  </LongitudePlane>
+</Controller>
+</opencv_storage>

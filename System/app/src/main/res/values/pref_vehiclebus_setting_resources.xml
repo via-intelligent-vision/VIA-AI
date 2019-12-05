@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="prefTitle_VehicleBus">Vehicle bus settings</string>
+
+    <!--================================================================================-->
+    <color name="prefBkg_VehicleBus">#FF111144</color>
+
+    <!--================================================================================-->
+    <string name="prefKey_VehicleBus_RegularSettingCategory">prefKey_VehicleBus_RegularSettingCategory</string>
+    <string name="prefTitle_VehicleBus_RegularSettingCategory">Regular Settings</string>
+
+    <!--================================================================================-->
+    <string name="prefKey_VehicleBus_BusStatus">prefKey_VehicleBus_BusStatus</string>
+    <string name="prefTitle_VehicleBus_BusStatus">Bus Status</string>
+    <bool name="prefDefaultValue_VehicleBus_BusStatus">true</bool>
+
+    <!--================================================================================-->
+    <string name="prefKey_VehicleBus_ProtocolType">prefKey_VehicleBus_ProtocolType</string>
+    <string name="prefTitle_VehicleBus_ProtocolType">Vehicle Type</string>
+    <string-array name="prefEntries_VehicleBus_ProtocolType">
+        <item>CANbus</item>
+    </string-array>
+    <string-array name="prefValues_VehicleBus_ProtocolType">
+        <item>0</item>
+    </string-array>
+    <string name="prefDefaultValue_VehicleBus_ProtocolType">0</string>
+
+    <!--================================================================================-->
+    <string name="prefKey_VehicleBus_VehicleType">prefKey_VehicleBus_VehicleType</string>
+    <string name="prefTitle_VehicleBus_VehicleType">Vehicle Type</string>
+    <string-array name="prefEntries_VehicleBus_VehicleType">
+        <item>Unknown</item>
+        <item>Honda CRV 2017</item>
+    </string-array>
+    <string-array name="prefValues_VehicleBus_VehicleType">
+        <item>0</item>
+        <item>2</item>
+    </string-array>
+    <string name="prefDefaultValue_VehicleBus_VehicleType">0</string>
+
+</resources>
